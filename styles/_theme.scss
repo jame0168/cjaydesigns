@@ -3,4 +3,12 @@ $secondary-color: #f00;
 
 $nav-font-stack: Questrial, sans-serif;
 
-$size-xl: 24px;
+$size-xl: 60px;
+
+.title-font{
+  font-family: $nav-font-stack;
+}
+
+.size-xl{
+  font-size: $size-xl;
+}

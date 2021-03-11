@@ -4,7 +4,7 @@ import { Title } from "./title";
 
 export function Main() {
   return (
-    <div>
+    <div style={{ height: "100%" }}>
       <Title />
     </div>
   );

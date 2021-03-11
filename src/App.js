@@ -13,7 +13,9 @@ export default function App() {
   return (
     <div className="App">
       <Container fluid>
-        <NavBar />
+        <Container fluid="xl">
+          <NavBar />
+        </Container>
         <Container fluid="xl" className="container-xxl title-container">
           <Main />
         </Container>
