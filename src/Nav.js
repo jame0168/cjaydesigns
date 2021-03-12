@@ -15,12 +15,11 @@ export function NavBar() {
             </a>
             <img
               alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
+              src="/cjaydesigns-grey-logo.png"
+              width="60"
+              height="60"
               className="d-inline-block align-top"
             />{" "}
-            CJay Designs
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse

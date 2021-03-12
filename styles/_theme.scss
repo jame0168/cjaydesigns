@@ -1,7 +1,8 @@
 $primary-color: #333;
 $secondary-color: #f00;
 
-$primary-font-stack: Futura-PT, sans-serif;
+$primary-font-stack: 'Futura-PT', sans-serif;
+$secondary-font-stack: 'Open Sans', sans-serif;
 
 $size-sm: 24px;
 $size-lg: 48px;
@@ -10,7 +11,14 @@ $size-xl: 64px;
 
 //Main Styles
 *{
+  font-size: 1em;
   font-family: $primary-font-stack;
+}
+
+p{
+  font-family: $secondary-font-stack;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 .primary-font{

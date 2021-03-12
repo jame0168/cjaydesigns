@@ -42,8 +42,8 @@ export function Title() {
         backgroundColor="#FFFFFF"
       />
       <div className="center w-100" style={{ top: "49%" }}>
-        <h1 className="size-xl text-center text-uppercase font-weight-bold primary-font">
-          ChristoPher James
+        <h1 className="display-3 text-center text-uppercase font-weight-bold primary-font">
+          Christopher James
         </h1>
         <h5 className="text-center text-uppercase">
           {" "}
