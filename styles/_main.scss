@@ -1,0 +1,13 @@
+// Main Styles
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Title Sytles
+.title-container{
+  height: 100vh;
+  max-height: 750px;
+}

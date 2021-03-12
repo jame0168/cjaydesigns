@@ -2,8 +2,8 @@ import React from "react";
 
 import { Container } from "react-bootstrap";
 
-import { NavBar } from "./nav";
-import { Main } from "./main";
+import { NavBar } from "./Nav";
+import { Main } from "./Main";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/styles.scss";
@@ -20,6 +20,9 @@ export default function App() {
           <Main />
         </Container>
       </Container>
+      {/* <Container fluid="xl">
+        <Footer />
+      </Container> */}
     </div>
   );
 }

@@ -6,10 +6,13 @@ import { Navbar } from "react-bootstrap";
 
 export function NavBar() {
   return (
-    <div className="navBar">
+    <div className="NavBar">
       <Navbar expand="lg" fixed="top">
         <Container fluid="xl" className="container-xxl">
           <Navbar.Brand href="#home" style={{ fontSize: "30" }}>
+            <a class="special" href="#toTop">
+              <i class="icon-logo-white"></i>
+            </a>
             <img
               alt=""
               src="/logo.svg"
@@ -23,7 +26,6 @@ export function NavBar() {
           <Navbar.Collapse
             id="responsive-navbar-nav"
             className="justify-content-center"
-            style={{ marginLeft: "-150px" }}
           >
             <Nav activeKey="/home">
               <Nav.Item className="px-5">

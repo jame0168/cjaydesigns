@@ -15,7 +15,7 @@ const particleOptions: ParticleOptions = {
     // Make a particle for this pixel if blue > 50 (range 0-255)
     return pixel.b > 50;
   },
-  color: ({ x, y, image }) => "#61dafb",
+  color: ({ x, y, image }) => "#DDDDDD",
   radius: () => Math.random() * 1.5 + 0.5,
   mass: () => 40,
   friction: () => 0.15,
@@ -25,15 +25,15 @@ const particleOptions: ParticleOptions = {
 };
 
 const motionForce = (x: number, y: number): ParticleForce => {
-  return forces.disturbance(x, y, 5);
+  return forces.disturbance(x, y, 10);
 };
 
 export function Title() {
   return (
     <Jumbotron>
       <ParticleImage
-        src={"/react-logo.png"}
-        scale={0.5}
+        src={"/cjaydesigns-grey-logo.png"}
+        scale={0.75}
         entropy={20}
         maxParticles={4000}
         particleOptions={particleOptions}
@@ -41,10 +41,14 @@ export function Title() {
         touchMoveForce={motionForce}
         backgroundColor="#FFFFFF"
       />
-      <div className="center w-100" style={{ top: "48%" }}>
-        <h1 className="size-xl text-center text-uppercase font-weight-bold title-font">
-          Chris James
+      <div className="center w-100" style={{ top: "49%" }}>
+        <h1 className="size-xl text-center text-uppercase font-weight-bold primary-font">
+          ChristoPher James
         </h1>
+        <h5 className="text-center text-uppercase">
+          {" "}
+          UX/UI and Graphic Design{" "}
+        </h5>
       </div>
     </Jumbotron>
   );
