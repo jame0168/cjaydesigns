@@ -1,33 +1,32 @@
+//Contianers
 .container-xxl{
   max-width: 1320px !important;
 }
 
-.title-container{
-  height: 100vh;
-  max-height: 750px;
+//Navbar
+.navbar-light{
+  .navbar-toggler{
+    border: none !important;
+  }
 }
 
+.navbar-collapse{
+  @media (min-width: 992px){
+    margin-left: -150px;
+  }
+}
+
+//Jumbotron
 .jumbotron{
   position: relative;
   margin-top: 80px;
   background-color: transparent !important;
   height: 100%;
   canvas {
-    width: auto;
-    height: 100%;
+    width: 100%;
     max-width: 600px;
     max-height: 600px;
     margin: 0 auto;
     display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-}
-
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
