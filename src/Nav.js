@@ -10,9 +10,9 @@ export function NavBar() {
       <Navbar expand="lg" fixed="top">
         <Container fluid="xl" className="container-xxl">
           <Navbar.Brand href="#home" style={{ fontSize: "30" }}>
-            <a class="special" href="#toTop">
-              <i class="icon-logo-white"></i>
-            </a>
+            {/* <a className="special" href="#toTop">
+              <i className="icon-logo-white"></i>
+            </a> */}
             <img
               alt=""
               src="/cjaydesigns-grey-logo.png"
