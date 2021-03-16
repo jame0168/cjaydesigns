@@ -1,13 +1,33 @@
 // Main Styles
 .center{
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 
 //Title Sytles
 .title-container{
+  position: relative;
   height: 100vh;
   max-height: 750px;
+}
+
+
+.main-list{
+  padding: 0px !important;
+  li{
+    display: block;
+    margin-bottom: .75em;
+    font-weight: 600;
+  }
+  span{
+    font-family: $secondary-font-stack;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  i{
+    vertical-align: middle;
+    width: 35px;
+  }
 }

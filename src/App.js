@@ -16,7 +16,7 @@ export default function App() {
         <Container fluid="xl">
           <NavBar />
         </Container>
-        <Container fluid="xl" className="container-xxl title-container">
+        <Container fluid="xl" className="container-xxl">
           <Main />
         </Container>
       </Container>

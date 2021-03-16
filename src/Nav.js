@@ -1,8 +1,32 @@
 import React from "react";
+import ParticleImage, {
+  ParticleOptions,
+  Vector,
+  forces,
+  ParticleForce
+} from "react-particle-image";
 
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
+const particleOptions: ParticleOptions = {
+  filter: ({ x, y, image }) => {
+    // Get pixel
+    const pixel = image.get(x, y);
+    // Make a particle for this pixel if blue > 50 (range 0-255)
+    return pixel.b > 50;
+  },
+  color: ({ x, y, image }) => "#333333",
+  radius: () => Math.random() * 1.5 + 0.5,
+  mass: () => 50,
+  friction: () => 0.15,
+  initialPosition: ({ canvasDimensions }) => {
+    return new Vector(canvasDimensions.width / 2, canvasDimensions.height / 2);
+  }
+};
+
+const motionForce = (x: number, y: number): ParticleForce => {
+  return forces.disturbance(x, y, 10);
+};
+
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 export function NavBar() {
   return (
@@ -13,30 +37,40 @@ export function NavBar() {
             {/* <a className="special" href="#toTop">
               <i className="icon-logo-white"></i>
             </a> */}
-            <img
+            {/* <img
               alt=""
               src="/cjaydesigns-grey-logo.png"
               width="60"
               height="60"
               className="d-inline-block align-top"
-            />{" "}
+            /> */}
+            <ParticleImage
+              src={"/cjaydesigns-grey-logo.png"}
+              scale={0.75}
+              entropy={20}
+              maxParticles={3000}
+              particleOptions={particleOptions}
+              mouseMoveForce={motionForce}
+              touchMoveForce={motionForce}
+              backgroundColor="transparent"
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
             id="responsive-navbar-nav"
-            className="justify-content-center"
+            className="justify-content-end"
           >
             <Nav activeKey="/home">
-              <Nav.Item className="px-5">
+              <Nav.Item className="px-3">
                 <Nav.Link href="/home">Skills</Nav.Link>
               </Nav.Item>
-              <Nav.Item className="px-5">
+              <Nav.Item className="px-3">
                 <Nav.Link eventKey="link-1">Work</Nav.Link>
               </Nav.Item>
-              <Nav.Item className="px-5">
+              <Nav.Item className="px-3">
                 <Nav.Link eventKey="link-2">About</Nav.Link>
               </Nav.Item>
-              <Nav.Item className="px-5">
+              <Nav.Item className="px-3">
                 <Nav.Link eventKey="link-3">Contact</Nav.Link>
               </Nav.Item>
             </Nav>
