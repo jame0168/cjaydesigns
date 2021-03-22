@@ -1,10 +1,38 @@
+//Nav Styles
+nav{
+  background: #FFFFFF;
+}
+
+.navbar-light{
+  .navbar-toggler{
+    border: none !important;
+  }
+}
+
+.navbar-collapse{
+  height: 100vh;
+  @media (min-width: 992px){
+    margin-left: -150px;
+  }
+}
+
+.navbar-brand{
+  canvas {
+    width: 100%;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 .nav-item{
   color: $primary-color;
   letter-spacing: .480em;
   text-transform: uppercase;
   font-family: $primary-font-stack;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 700;
   background-color: transparent;
   text-align: center;
   padding-top: 20px;

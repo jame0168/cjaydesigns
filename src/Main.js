@@ -5,15 +5,19 @@ import { Container } from "react-bootstrap";
 import { Title } from "./title";
 import { Coding } from "./coding";
 import { Design } from "./design";
+import { Animate } from "./animate";
 
 export function Main() {
   return (
     <div className="Main">
-      <div className="h-100">
-        <Title />
-        <Coding />
-        <Design />
-      </div>
+      <Container fluid="xl" className="container-xxl">
+        <div className="h-100">
+          <Title />
+          <Coding />
+          <Design />
+          <Animate />
+        </div>
+      </Container>
     </div>
   );
 }

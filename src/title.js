@@ -5,24 +5,17 @@ import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 export function Title() {
   return (
     <Jumbotron className="pt-0">
-      <Container>
+      <Container fluid="xl" className="container-xxl">
         <Row>
-          <Col sm={12} md={6} className="title-container">
+          <Col md={12} lg={6} className="title-container">
             <div className="center w-100">
-              <h1 className="display-3 text-left text-uppercase font-weight-bold primary-font">
-                <span style={{ fontSize: "10vw", lineHeight: "6vw" }}>
-                  Chris
-                </span>
+              <h1 className="display-3 text-uppercase font-weight-bold primary-font mb-0">
+                <span className="title-first">Chris</span>
                 <br />
-                <span style={{ fontSize: "9.2vw", lineHeight: "6vw" }}>
-                  James
-                </span>
+                <span className="title-second">James</span>
               </h1>
-              <h2
-                className="text-uppercase"
-                style={{ fontSize: "2.15vw", lineHeight: "1vw" }}
-              >
-                UX/UI and Graphic Design
+              <h2 className="text-uppercase">
+                <span className="title-caption">UX/UI and Graphic Design</span>
               </h2>
             </div>
           </Col>

@@ -1,43 +1,22 @@
+//Theme Styles
+//Color
 $primary-color: #333;
 
-// $primary-gradient: -webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 $primary-gradient: -webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%); 
+// $primary-gradient: -webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 
+//Font
 $primary-font-stack: 'Futura-PT', sans-serif;
 $secondary-font-stack: 'Open Sans', sans-serif;
-
-$size-sm: 24px;
-$size-lg: 48px;
-$size-xl: 64px;
-
-
-//Main Styles
-*{
-  font-size: 1em;
-  font-family: $primary-font-stack;
-}
-
-p{
-  font-family: $secondary-font-stack;
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-ul, li{
-  @extend p;
-  list-style-type: none;
-}
-
-i{
-  font-size: $size-sm;
-  background: $primary-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .primary-font{
   font-family: $primary-font-stack;
 }
+
+//Sizes
+$size-sm: 24px;
+$size-lg: 48px;
+$size-xl: 64px;
 
 .size-sm{
   font-size: $size-sm;

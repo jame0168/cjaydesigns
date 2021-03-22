@@ -6,6 +6,8 @@ import ParticleImage, {
   ParticleForce
 } from "react-particle-image";
 
+import { Container, Nav, Navbar } from "react-bootstrap";
+
 const particleOptions: ParticleOptions = {
   filter: ({ x, y, image }) => {
     // Get pixel
@@ -25,8 +27,6 @@ const particleOptions: ParticleOptions = {
 const motionForce = (x: number, y: number): ParticleForce => {
   return forces.disturbance(x, y, 10);
 };
-
-import { Container, Nav, Navbar } from "react-bootstrap";
 
 export function NavBar() {
   return (

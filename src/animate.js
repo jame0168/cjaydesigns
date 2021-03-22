@@ -2,20 +2,20 @@ import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-export function Coding() {
+export function Animate() {
   return (
     <Container fluid="xl" className="container-xxl section">
       <Row className="sticky">
         <Col xs={12} sm={6}>
           <h2 className="display-4 text-uppercase font-weight-bold">
-            <span className="underline--magical">Coding.</span>
+            <span className="underline--magical">Animation.</span>
           </h2>
           <p>
-            {/* I have a strong knowledge of front-end coding. Specfically in HTML5, CSS3, SASS, React, jQuery and Bootstrap. I have some cursory knowledge in PHP, HAML, and Javascript but am always looking to improve my current skills and learn new coding languages. I have also used Github and BitBucket for repositories for version control. */}
-            I have a strong knowledge of front-end coding languages, most listed
-            below, and am always looking to improve my current skills and learn
-            new coding languages. I have also used Github and BitBucket for
-            repositories for version control.
+            I love to design and draw. I have designed or helped design a few
+            advertisements. Addtionally I also have done a fair it of UX/UI
+            Design work. I have good knowledge of Illustrator and Photoshop, and
+            have played around with InDesign as well. I generally to use
+            InVision for UX/UI testing.
           </p>
           <Row>
             <Col xs={6}>
@@ -47,7 +47,7 @@ export function Coding() {
           </Row>
         </Col>
         <Col xs={12} sm={6}>
-          <div className="screen"></div>
+          2 of 2
         </Col>
       </Row>
     </Container>

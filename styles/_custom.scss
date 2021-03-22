@@ -1,36 +1,83 @@
-//Contianers
-.container-xxl{
-  max-width: 1320px !important;
+// Custom Personal Styles
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-//Navbar
-.navbar-light{
-  .navbar-toggler{
-    border: none !important;
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 125px;
+}
+.section{
+  @media only screen and (min-width: 992px){
+    height: 100vh;
+    max-height: 750px;
   }
 }
 
-.navbar-collapse{
-  @media (min-width: 992px){
-    margin-left: -150px;
-  }
-}
-
-.navbar-brand{
-  canvas {
-    width: 100%;
-    max-width: 100px !important;
-    max-height: 100px !important;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-//Jumbotron
-.jumbotron {
-  padding-top:0px;
+//Title Sytles
+.title-container{
   position: relative;
-  margin-top: 110px;
-  background-color: transparent !important;
-  height: 100%;
+  height: 100vh;
+  max-height: 750px;
+  h1,h2 {
+    text-align: center !important;
+    @media only screen and (min-width: 992px){
+      text-align: left !important;
+    }
+  }
 }
+
+.title-first{
+  font-size: 100px;
+  line-height: 0;
+  @media only screen and (min-width: 992px){
+    font-size: 190px;
+  }
+}
+
+.title-second{
+  font-size: 92px;
+  line-height: 0;
+  @media only screen and (min-width: 992px){
+    font-size: 175px;
+    line-height: 100px;
+  }
+}
+
+.title-caption{
+  font-size: 20px; 
+  line-height: 0;
+  @media only screen and (min-width: 992px){
+    font-size: 40px;
+  }
+}
+
+//List Styles
+.main-list{
+  padding: 0px !important;
+  li{
+    display: block;
+    margin-bottom: .75em;
+    font-weight: 600;
+  }
+  span{
+    font-family: $secondary-font-stack;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  i{
+    vertical-align: middle;
+    width: 35px;
+  }
+}
+
+.screen{
+  margin: 0 auto;
+  width: 500px;
+  height: 280px;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 5px 15px 0px, rgba(255, 255, 255, 0.8) 0px 5px 15px 0px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  }
