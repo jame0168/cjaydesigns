@@ -5,15 +5,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .sticky{
   position: -webkit-sticky;
   position: sticky;
-  top: 125px;
+  top: 130px;
 }
+
 .section{
   @media only screen and (min-width: 992px){
     height: 100vh;
-    max-height: 750px;
+    // max-height: 750px;
   }
 }
 
@@ -21,7 +23,7 @@
 .title-container{
   position: relative;
   height: 100vh;
-  max-height: 750px;
+  // max-height: 750px;
   h1,h2 {
     text-align: center !important;
     @media only screen and (min-width: 992px){
@@ -78,6 +80,8 @@
   margin: 0 auto;
   width: 500px;
   height: 280px;
-  box-shadow: rgba(136, 165, 191, 0.48) 0px 5px 15px 0px, rgba(255, 255, 255, 0.8) 0px 5px 15px 0px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 10px;
-  }
+  // box-shadow: rgba(64, 62, 61, 0.15) 0px 5px 15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(64, 62, 61, 0.15) 0px 5px 15px;
+  
+}
