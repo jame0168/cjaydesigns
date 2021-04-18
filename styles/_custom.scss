@@ -87,6 +87,16 @@
     height: 50px;
     background: $primary-gradient;
 
+    i{
+      font-size: 28px;
+      background: #FFFFFF;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     .fauxUser{
       position: absolute;
       width: 30px;
@@ -140,6 +150,10 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
+  }
+
+  i{
+    font-size: 5em;
   }
 }
 

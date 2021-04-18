@@ -13,17 +13,21 @@ export function Work() {
             </h2>
           </Col>
         </Row>
-        <Row>
-          <div className="project" id="website">
-            <div></div>
-            <h3 className="project-title">This Website!</h3>
-            <p>
-              This website was made from scrathchas my own personal react and
-              GSAP project. This websitewas created using Codesandbox, React,
-              GSAP, Bootstrap and SASS.
-            </p>
-          </div>
-        </Row>
+        <div className="project d-flex justify-content-center" id="website">
+          <Row>
+            <Col xs={12} className="text-center d-flex justify-content-center">
+              <i className="fas fa-crown"></i>
+            </Col>
+            <Col xs={12}>
+              <h3 className="project-title">This Website!</h3>
+              <p>
+                This website was made from scrathchas my own personal react and
+                GSAP project. This websitewas created using Codesandbox, React,
+                GSAP, Bootstrap and SASS.
+              </p>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </section>
   );

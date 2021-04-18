@@ -89,9 +89,10 @@ export function Screen() {
           className="fauxText fauxTitle"
           style={{ background: "#FFF" }}
         ></div>
-        <div className="fauxUser">
-          <i className="fab fa-user"></i>
-        </div>
+        {/* <div className="fauxUser">
+          <i className="far fa-user-circle"></i>
+        </div> */}
+        <i className="far fa-user-circle"></i>
       </div>
       <Row>
         <Col xs={12} md={5} className="pr-0">
