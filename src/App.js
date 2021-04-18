@@ -4,7 +4,6 @@ import { NavBar } from "./Nav";
 import { Main } from "./Main";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/styles.scss";
 import "../styles/app.scss";
 
 export default function App() {
@@ -12,6 +11,7 @@ export default function App() {
     <div className="App">
       <NavBar />
       <Main />
+      {/* <Footer /> */}
       {/* <Container fluid="xl">
         <Footer />
       </Container> */}

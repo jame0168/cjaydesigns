@@ -12,14 +12,6 @@
   top: 130px;
 }
 
-.section{
-  height: 2500px;
-  @media only screen and (max-width: 992px){
-    height: 100vh;
-    // max-height: 750px;
-  }
-}
-
 //Title Sytles
 .title-container{
   position: relative;
@@ -86,15 +78,16 @@
   box-shadow: rgba(64, 62, 61, 0.15) 0px 5px 15px;
   overflow: hidden;
 
-  .header{
+  .fauxHeader{
     position: relative;
     margin-top: -50px;
-    opacity: 0;
+    padding-top: 15px;
+    padding-left: 15px;
     width: 100%;
     height: 50px;
     background: $primary-gradient;
 
-    .user{
+    .fauxUser{
       position: absolute;
       width: 30px;
       height: 30px;
@@ -105,4 +98,51 @@
       backdrop-filter: blur(5px);
     }
   }
+
+  .fauxImages{
+    width: 100%;
+    height: 33vh;
+    background: $primary-gradient;
+    border-radius: 4px;
+    max-height: 200px;
+  }
+
+  .fauxText{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background: #EEEEEE;
+    margin-bottom: 15px;
+  }
+
+  .fauxTitle{
+    @extend .fauxText;
+    width: 75%;
+    background: $primary-gradient;
+    margin-bottom: 25px;
+  }
+}
+
+.sections{
+  height: 100%;
+}
+
+.project{
+  display: flex;
+  margin-top: 15px;
+  padding: 15px;
+  width: 33%;
+  min-width: 300px;
+  height: 450px;
+  border-radius: 4px;
+
+  .project-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+#website{
+  border: 2px solid #EEEEEE;
 }

@@ -1,11 +1,11 @@
 import React from "react";
+
 import ParticleImage, {
   ParticleOptions,
   Vector,
   forces,
   ParticleForce
 } from "react-particle-image";
-
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const particleOptions: ParticleOptions = {
@@ -45,7 +45,7 @@ export function NavBar() {
               className="d-inline-block align-top"
             /> */}
             <ParticleImage
-              src={"/cjaydesigns-grey-logo.png"}
+              src={"/img/cjaydesigns-grey-logo.png"}
               scale={0.75}
               entropy={20}
               maxParticles={3000}

@@ -6,6 +6,7 @@ import { Title } from "./title";
 import { Coding } from "./coding";
 import { Design } from "./design";
 import { Animate } from "./animate";
+import { Work } from "./work";
 
 export function Main() {
   return (
@@ -16,6 +17,7 @@ export function Main() {
           <Coding />
           <Design />
           <Animate />
+          <Work />
         </div>
       </Container>
     </div>
