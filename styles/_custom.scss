@@ -12,6 +12,16 @@
   top: 130px;
 }
 
+.center-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sections{
+  height: 100%;
+}
+
 //Title Sytles
 .title-container{
   position: relative;
@@ -69,6 +79,8 @@
   }
 }
 
+//Section Sytles
+//Coding Sytles
 .screen{
   margin: 0 auto;
   width: 500px;
@@ -133,12 +145,8 @@
   }
 }
 
-.sections{
-  height: 100%;
-}
-
+//Project Styles
 .project{
-  display: flex;
   margin-top: 15px;
   padding: 15px;
   width: 33%;
@@ -146,6 +154,11 @@
   height: 450px;
   border-radius: 4px;
 
+  .project-icon{
+    @extend .center-flex;
+    height: 180px;
+  }
+  
   .project-title{
     text-transform: uppercase;
     text-align: center;
