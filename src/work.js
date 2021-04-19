@@ -14,7 +14,7 @@ export function Work() {
           </Col>
         </Row>
         <Row>
-          <Col className="d-flex justify-content-between">
+          <Col className="d-flex flex-nowrap overflow-x-scroll">
             {/* <!-- This Site --> */}
             <div className="project" id="website">
               <Row>
@@ -51,6 +51,21 @@ export function Work() {
             <div className="project" id="website">
               <Row>
                 <Col xs={12} className=" project-icon text-center center-flex">
+                  <i className="fas fa-crown"></i>
+                </Col>
+                <Col xs={12}>
+                  <h3 className="project-title">Nortrax</h3>
+                  <p>
+                    This website was made from scratch as my own personal React
+                    and GSAP project. This website was created using
+                    Codesandbox, React, GSAP, Bootstrap and SASS.
+                  </p>
+                </Col>
+              </Row>
+            </div>
+            <div className="project" id="website">
+              <Row>
+                <Col xs={12} className=" project-icon text-center">
                   <i className="fas fa-crown"></i>
                 </Col>
                 <Col xs={12}>
