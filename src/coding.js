@@ -9,7 +9,7 @@ export function Coding() {
     <section>
       <Container fluid="xl" className="container-xxl sections">
         <Row className="sticky">
-          <Col xs={12} sm={{ span: 5, offset: 1 }}>
+          <Col sm={12} md={{ span: 5, offset: 1 }}>
             <div className="sections-content">
               <h2 className="display-4 text-uppercase font-weight-bold">
                 <span className="underline--magical">Coding.</span>
@@ -53,7 +53,7 @@ export function Coding() {
               </Row>
             </div>
           </Col>
-          <Col xs={12} sm={6}>
+          <Col sm={12} md={6}>
             <Screen />
           </Col>
         </Row>

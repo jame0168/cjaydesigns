@@ -1,13 +1,15 @@
 //Theme Styles
 //Color
 $primary-color: #333;
+$secondary-color: #EEE;
+$tertiary-color: #FFF;
 
 $primary-gradient: -webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%); 
 // $primary-gradient: -webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 
 //Font
 $primary-font-stack: 'Futura-PT', sans-serif;
-$secondary-font-stack: 'Open Sans', sans-serif;
+$secondary-font-stack: 'Roboto', sans-serif;
 
 .primary-font{
   font-family: $primary-font-stack;

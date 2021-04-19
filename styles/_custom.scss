@@ -141,11 +141,13 @@
 
 //Project Styles
 .project{
+  background: $tertiary-color;
   margin-top: 15px;
   padding: 15px;
   width: 33%;
   min-width: 320px;
   height: 450px;
+  border: 2px solid $secondary-color;
   border-radius: 4px;
   display: inline-block;
   margin-right: 15px;
@@ -155,6 +157,9 @@
     align-items: center;
     justify-content: center;
     height: 180px;
+    i{
+      font-size: 5em;
+    }
   }
   
   .project-title{
@@ -162,12 +167,23 @@
     text-align: center;
     font-weight: bold;
   }
-
-  i{
-    font-size: 5em;
-  }
+ 
 }
 
-#website{
-  border: 2px solid #EEEEEE;
+.project:hover{
+  background: $primary-gradient;
+  color: $tertiary-color;
+
+  .project-icon{
+    i{
+      background: $tertiary-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .project-title{
+    color: $tertiary-color;
+  }
+
 }
