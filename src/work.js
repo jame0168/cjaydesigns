@@ -50,7 +50,7 @@ export function Work() {
             {/* <!-- Nortrax --> */}
             <div className="project mt-3 mr-3 px-3">
               <Row>
-                <Col xs={12} className=" project-icon text-center center-flex">
+                <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
                 </Col>
                 <Col xs={12}>
@@ -65,7 +65,7 @@ export function Work() {
             </div>
             <div className="project mt-3 mr-3 px-3">
               <Row>
-                <Col xs={12} className=" project-icon text-center">
+                <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
                 </Col>
                 <Col xs={12}>
@@ -80,7 +80,7 @@ export function Work() {
             </div>
             <div className="project" id="website">
               <Row>
-                <Col xs={12} className=" project-icon text-center">
+                <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
                 </Col>
                 <Col xs={12}>
