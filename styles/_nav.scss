@@ -25,7 +25,7 @@ nav{
   }
 }
 
-.nav-link{
+.nav-item{
   color: $primary-color;
   letter-spacing: .480em;
   text-transform: uppercase;
@@ -38,18 +38,3 @@ nav{
   padding-bottom: 10px;
   padding-left: 18px;
 }
-
-// Old Nav
-// .nav-item{
-//   color: $primary-color;
-//   letter-spacing: .480em;
-//   text-transform: uppercase;
-//   font-family: $primary-font-stack;
-//   font-size: 12px;
-//   font-weight: 700;
-//   background-color: transparent;
-//   text-align: center;
-//   padding-top: 20px;
-//   padding-bottom: 10px;
-//   padding-left: 18px;
-// }

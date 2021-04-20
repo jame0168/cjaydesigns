@@ -61,40 +61,28 @@ export function NavBar() {
             className="justify-content-end"
           >
             <Nav>
-              <Nav.Link className="px-3" href="#skills">
-                Skills
-              </Nav.Link>
-              <Nav.Link className="px-3" href="#link">
-                Link
-              </Nav.Link>
-              {/* 
-                // Old Nav
-                <Nav activeKey="/home">
-                  <Nav.Item className="px-3">
-                    <Nav.Link href="#skills">Skills</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item className="px-3">
-                    <Nav.Link href="#work">Work</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item className="px-3">
-                    <Nav.Link href="#about">About</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item className="px-3">
-                    <Nav.Link href="#contact">Contact</Nav.Link>
-                  </Nav.Item>
-                </Nav> 
-              */}
-
-              {/* 
-                // Secondary Nav
-                <Nav>
-                  <Nav.Link href="#deets">More deets</Nav.Link>
-                  <Nav.Link eventKey={2} href="#memes">
-                    Dank memes
-                  </Nav.Link>
-                </Nav> 
-              */}
+              <Nav.Item className="px-3">
+                <Nav.Link href="#skills">Skills</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="px-3">
+                <Nav.Link href="#work">Work</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="px-3">
+                <Nav.Link href="#about">About</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="px-3">
+                <Nav.Link href="#contact">Contact</Nav.Link>
+              </Nav.Item>
             </Nav>
+            {/* 
+              // Secondary Nav
+              <Nav>
+                <Nav.Link href="#deets">More deets</Nav.Link>
+                <Nav.Link eventKey={2} href="#memes">
+                  Dank memes
+                </Nav.Link>
+              </Nav> 
+            */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
