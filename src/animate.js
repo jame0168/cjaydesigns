@@ -6,7 +6,7 @@ export function Animate() {
   return (
     <section>
       <Container fluid="xl" className="container-xxl sections">
-        <Row className="sticky">
+        <Row className="sticky t-130">
           <Col xs={12} sm={{ span: 5, offset: 1 }}>
             <h2 className="display-4 text-uppercase font-weight-bold">
               <span className="underline--magical">Animation.</span>

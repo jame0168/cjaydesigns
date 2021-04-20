@@ -9,12 +9,22 @@
 .sticky{
   position: -webkit-sticky;
   position: sticky;
-  top: 130px;
 }
 
 .sections{
   height: 100%;
 }
+
+//Custom Top Styles
+.t-130{
+  top: 130px;
+}
+
+//Custom Padding Styles
+.pt-130{
+  padding-top: 130px;
+}
+
 
 //Title Sytles
 .title-container{
@@ -60,12 +70,10 @@
   li{
     display: block;
     margin-bottom: .75em;
-    font-weight: 600;
   }
   span{
     font-family: $secondary-font-stack;
     text-transform: uppercase;
-    font-size: 14px;
   }
   i{
     vertical-align: middle;
@@ -74,6 +82,7 @@
 }
 
 //Section Sytles
+
 //Coding Sytles
 .screen{
   margin: 0 auto;
@@ -142,15 +151,12 @@
 //Project Styles
 .project{
   background: $tertiary-color;
-  margin-top: 15px;
-  padding: 15px;
   width: 33%;
   min-width: 320px;
   height: 450px;
   border: 2px solid $secondary-color;
   border-radius: 4px;
   display: inline-block;
-  margin-right: 15px;
 
   .project-icon{
     display: flex;

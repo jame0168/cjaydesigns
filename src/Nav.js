@@ -62,16 +62,18 @@ export function NavBar() {
           >
             <Nav activeKey="/home">
               <Nav.Item className="px-3">
-                <Nav.Link href="/home">Skills</Nav.Link>
+                <Nav.Link href="#skills">Skills</Nav.Link>
               </Nav.Item>
               <Nav.Item className="px-3">
-                <Nav.Link eventKey="link-1">Work</Nav.Link>
+                <Nav.Link eventKey="#work" href="#work">
+                  Work
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item className="px-3">
-                <Nav.Link eventKey="link-2">About</Nav.Link>
+                <Nav.Link eventKey="#about">About</Nav.Link>
               </Nav.Item>
               <Nav.Item className="px-3">
-                <Nav.Link eventKey="link-3">Contact</Nav.Link>
+                <Nav.Link eventKey="#contact">Contact</Nav.Link>
               </Nav.Item>
             </Nav>
             {/* <Nav>

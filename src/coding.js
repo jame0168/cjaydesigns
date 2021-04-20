@@ -7,8 +7,8 @@ import { Screen } from "./components/screen";
 export function Coding() {
   return (
     <section>
-      <Container fluid="xl" className="container-xxl sections">
-        <Row className="sticky">
+      <Container fluid="xl" className="container-xxl sections" id="skills">
+        <Row className="sticky t-130">
           <Col sm={12} md={{ span: 5, offset: 1 }}>
             <div className="sections-content">
               <h2 className="display-4 text-uppercase font-weight-bold">

@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 export function Work() {
   return (
     <section>
-      <Container fluid="xl" className="container-xxl section">
-        <Row>
+      <Container fluid="xl" className="container-xxl" id="work">
+        <Row className="pt-130">
           <Col>
             <h2 className="display-4 text-uppercase font-weight-bold text-center">
               <span className="underline--magical">My Work.</span>
@@ -16,7 +16,7 @@ export function Work() {
         <Row>
           <Col className="d-flex flex-nowrap overflow-x-scroll">
             {/* <!-- This Site --> */}
-            <div className="project" id="website">
+            <div className="project mt-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center">
                   <i className="fas fa-crown"></i>
@@ -32,7 +32,7 @@ export function Work() {
               </Row>
             </div>
             {/* <!-- Hyre --> */}
-            <div className="project" id="website">
+            <div className="project mt-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center">
                   <i className="fas fa-crown"></i>
@@ -48,7 +48,7 @@ export function Work() {
               </Row>
             </div>
             {/* <!-- Nortrax --> */}
-            <div className="project" id="website">
+            <div className="project mt-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center center-flex">
                   <i className="fas fa-crown"></i>
@@ -63,7 +63,7 @@ export function Work() {
                 </Col>
               </Row>
             </div>
-            <div className="project" id="website">
+            <div className="project mt-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center">
                   <i className="fas fa-crown"></i>
