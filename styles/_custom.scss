@@ -146,6 +146,17 @@
     background: $primary-gradient;
     margin-bottom: 25px;
   }
+
+  .fauxIconContainer{
+    border-top: 2px solid $secondary-color;
+    .fauxIcons{
+      width: 25px;
+      height: 25px;
+      border-radius: 20px;
+      background: $primary-gradient;
+    }
+  }
+  
 }
 
 //Project Styles
