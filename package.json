@@ -10,6 +10,7 @@
   "dependencies": {
     "@babel/runtime": "7.13.8",
     "bootstrap": "4.6.0",
+    "components": "0.1.0",
     "gsap": "3.6.1",
     "react": "17.0.1",
     "react-bootstrap": "1.5.1",

@@ -5,7 +5,7 @@ import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 export function Title() {
   return (
     <div className="Title">
-      <Jumbotron className="pt-0">
+      <Jumbotron className="py-0 mb-0">
         <Container fluid="xl" className="container-xxl">
           <Row>
             <Col md={12} lg={6} className="title-container">

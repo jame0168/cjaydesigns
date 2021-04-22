@@ -2,11 +2,13 @@ import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import { DesignAnimation } from "./components/designAnimation";
+
 export function Design() {
   return (
     <section>
       <Container fluid="xl" className="container-xxl sections">
-        <Row className="sticky t-130">
+        <Row className="sticky d-flex align-items-center sections-content t-130">
           <Col xs={12} sm={{ span: 5, offset: 1 }}>
             <h2 className="display-4 text-uppercase font-weight-bold">
               <span className="underline--magical">Design.</span>
@@ -48,8 +50,8 @@ export function Design() {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} sm={6}>
-            2 of 2
+          <Col xs={12} sm={6} className="h-100">
+            <DesignAnimation />
           </Col>
         </Row>
       </Container>
