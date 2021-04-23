@@ -15,7 +15,15 @@
   height: 100%;
 }
 
+.sections-content{
+  height: 500px;
+}
+
 //Custom Top Styles
+.t-0{
+  top: 0;
+}
+
 .t-130{
   top: 130px;
 }
@@ -147,16 +155,48 @@
     margin-bottom: 25px;
   }
 
-  .fauxIconContainer{
-    border-top: 2px solid $secondary-color;
-    .fauxIcons{
-      width: 25px;
-      height: 25px;
-      border-radius: 20px;
-      background: $primary-gradient;
-    }
+  .fauxIcons{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: $primary-gradient;
   }
   
+}
+
+//Design Sytles
+.fauxControlBar{
+  width: 350px;
+  height: 7px;
+  margin: 0px auto;
+  background: $primary-gradient;
+  transform: translate(0px, 150px);
+}
+
+.fauxControl{
+  width: 25px;
+  height: 25px;
+}
+
+.fauxControl#controlOne{
+  transform: translate(120px, 135px);
+}
+
+.fauxControl#controlTwo{
+  transform: translate(470px, 110px);
+}
+
+.fauxPoint{
+  width: 35px;
+  height: 35px;
+}
+
+.fauxPoint#pointOne{
+  transform: translate(90px, 275px);
+}
+
+.fauxPoint#pointTwo{
+  transform: translate(290px, 45px);
 }
 
 //Project Styles

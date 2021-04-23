@@ -21,14 +21,14 @@ export function DesignAnimation() {
     });
 
     animateIn.fromTo(
-      ".fa-pen-fancy",
+      ".fa-pen-nib",
       {
-        x: "-162px",
-        y: "-193px",
+        x: "-150px",
+        y: "-210px",
         scale: 0
       },
       {
-        scale: 3,
+        scale: 4.25,
         duration: 1,
         ease: "bounce.out"
       }
@@ -46,7 +46,7 @@ export function DesignAnimation() {
       }
     });
 
-    animateScrub.to(".fa-pen-fancy", {
+    animateScrub.to(".fa-pen-nib", {
       duration: 5,
       delay: 2,
       immediateRender: true,
@@ -60,8 +60,6 @@ export function DesignAnimation() {
     animateScrub.fromTo(
       "#pointOne",
       {
-        x: "260%",
-        y: "-555%",
         scale: 0
       },
       {
@@ -70,11 +68,40 @@ export function DesignAnimation() {
       },
       "-=5"
     );
+
+    animateScrub.fromTo(
+      "#pointTwo",
+      {
+        scale: 0
+      },
+      {
+        scale: 1,
+        duration: 0.5
+      },
+      "-=3.5"
+    );
+
+    animateScrub.fromTo(
+      "#pointThree",
+      {
+        motionPath: {
+          path: "#path",
+          align: "#path",
+          alignOrigin: [0.5, 0.5]
+        },
+        scale: 0
+      },
+      {
+        scale: 1,
+        duration: 0.5
+      },
+      "-=1.5"
+    );
   }, []);
 
   return (
     <div className="designAnimation h-100">
-      <div className="text-center h-100">
+      <div className="text-center position-relative h-100">
         <svg viewBox="0 -50 500 500">
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -88,15 +115,30 @@ export function DesignAnimation() {
             d="M51,301 c25,-263 375,-263 400,-1"
           />
         </svg>
-        <i className="fas fa-pen-fancy"></i>
-        <div
-          className="fauxVector rounded border-gradient border-gradient-primary"
-          id="pointOne"
-        ></div>
-        {/* <div className="fauxVector rounded border-gradient border-gradient-primary"></div>
-        <div className="fauxVector rounded border-gradient border-gradient-primary"></div>
-        <div className="fauxControl border-gradient border-gradient-primary"></div>
-        <div className="fauxControl border-gradient border-gradient-primary"></div> */}
+        <i className="fas fa-pen-nib"></i>
+        <div className="fauxVector position-absolute h-100 w-100 t-0">
+          <div className="fauxControlBar"></div>
+          <div
+            className="fauxControl border-gradient border-gradient-primary"
+            id="controlOne"
+          ></div>
+          <div
+            className="fauxControl border-gradient border-gradient-primary"
+            id="controlTwo"
+          ></div>
+          <div
+            className="fauxPoint rounded border-gradient border-gradient-primary"
+            id="pointOne"
+          ></div>
+          <div
+            className="fauxPoint rounded border-gradient border-gradient-primary"
+            id="pointTwo"
+          ></div>
+          <div
+            className="fauxPoint rounded border-gradient border-gradient-primary"
+            id="pointThree"
+          ></div>
+        </div>
       </div>
     </div>
   );
