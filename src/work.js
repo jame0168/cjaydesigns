@@ -19,7 +19,7 @@ export function Work() {
             <div className="project mt-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center">
-                  <i className="fas fa-crown"></i>
+                  <i className="ri-vip-crown-line"></i>
                 </Col>
                 <Col xs={12}>
                   <h3 className="project-title">This Website!</h3>

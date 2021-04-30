@@ -77,11 +77,12 @@
   padding: 0px !important;
   li{
     display: block;
-    margin-bottom: .75em;
+    line-height: 1.25;
   }
   span{
     font-family: $secondary-font-stack;
     text-transform: uppercase;
+    font-size: 0.75em;
   }
   i{
     vertical-align: middle;
@@ -127,7 +128,7 @@
       right: 10px;
       top: 10px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.51);
       backdrop-filter: blur(5px);
     }
   }
@@ -138,6 +139,46 @@
     background: $primary-gradient;
     border-radius: 4px;
     max-height: 200px;
+    transform: translate(0px, 0px);
+    overflow: hidden;
+
+    .fauxImageContent{
+      position: relative;
+
+      .fauxSun{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 25px;
+        top: 25px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.51);
+        backdrop-filter: blur(5px);
+      }
+      
+      .fauxMountains{
+        position: absolute;
+        top: 74.5px;
+        right: -60px;
+        width: 100%;
+
+        .fm{
+          height: 15px;
+          background: rgba(255, 255, 255, 0.51);
+        }
+
+        .fmLeft{
+          width: 65px;
+          border-top-right-radius: 8px;
+          transform: translateX(7px) rotate(-45deg);
+        }
+
+        .fmRight{
+          width: 200px;
+          transform: translate(33px, 43.3px) rotate(45deg);
+        }
+      }
+    }
   }
 
   .fauxText{
@@ -165,25 +206,36 @@
 }
 
 //Design Sytles
+.designAnimation i{
+    text-shadow: $primary-text-shadow;
+}
+
+.fauxControlHandle{
+  display: inline-block;
+  margin: 120px auto 0;
+  transform-origin: center center;
+  height: 60px;
+}
+
 .fauxControlBar{
   width: 350px;
   height: 7px;
-  margin: 0px auto;
   background: $primary-gradient;
-  transform: translate(0px, 150px);
+  transform: translate(0px, 25px);
 }
 
 .fauxControl{
   width: 25px;
   height: 25px;
+  border-radius: 25px;
 }
 
 .fauxControl#controlOne{
-  transform: translate(120px, 135px);
+  transform: translate(-15px, 10px);
 }
 
 .fauxControl#controlTwo{
-  transform: translate(470px, 110px);
+  transform: translate(340px, -15px);
 }
 
 .fauxPoint{
@@ -191,12 +243,10 @@
   height: 35px;
 }
 
-.fauxPoint#pointOne{
-  transform: translate(90px, 275px);
-}
-
-.fauxPoint#pointTwo{
-  transform: translate(290px, 45px);
+.fauxControlBar,
+.fauxControl,
+.fauxPoint{
+  box-shadow: $primary-box-shadow;
 }
 
 //Project Styles
@@ -215,7 +265,7 @@
     justify-content: center;
     height: 180px;
     i{
-      font-size: 5em;
+      font-size: 5.25em;
     }
   }
   

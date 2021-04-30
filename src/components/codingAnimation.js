@@ -7,6 +7,7 @@ import { Row } from "react-bootstrap";
 import { CodingAnimationTop } from "./codingAnimationTop";
 import { CodingAnimationLeft } from "./codingAnimationLeft";
 import { CodingAnimationRight } from "./codingAnimationRight";
+import { CodingAnimationBottom } from "./codingAnimationBottom";
 
 export function CodingAnimation() {
   gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +54,7 @@ export function CodingAnimation() {
         <Row>
           <CodingAnimationLeft />
           <CodingAnimationRight />
+          <CodingAnimationBottom />
         </Row>
       </div>
     </div>

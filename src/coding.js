@@ -5,6 +5,40 @@ import { Container, Row, Col } from "react-bootstrap";
 import { CodingAnimation } from "./components/codingAnimation";
 
 export function Coding() {
+  const codeTools = [
+    "HTML / Haml",
+    "CSS / Sass",
+    "JS /jQuery",
+    "React",
+    "GSAP",
+    "Bootstrap"
+  ];
+
+  const codeItems = [];
+  // for (let i = 0; i < codeTools.length; i += size)
+  //   codeItems.push(codeTools.slice(i, i + size));
+
+  for (let i = 0; i < codeTools.length; i += 3) {
+    codeItems.push(
+      <Col xs={6} sm={4}>
+        {codeTools.slice(i, i + 3).map((codeTool) => (
+          <li key={codeTool.toString()}>
+            <i className="ri-code-s-line"></i> <span> {codeTool} </span>
+          </li>
+        ))}
+      </Col>
+    );
+  }
+
+  // console.log(codeItems[0]);
+
+  const branchTools = ["Github", "BitBucket", "Cloud9"];
+  const branchItems = branchTools.map((branchTool) => (
+    <li key={branchTool.toString()}>
+      <i className="ri-git-branch-line"></i> <span> {branchTool} </span>
+    </li>
+  ));
+
   return (
     <section>
       <Container fluid="xl" className="container-xxl sections" id="skills">
@@ -16,39 +50,19 @@ export function Coding() {
             <p>
               {/* I have a strong knowledge of front-end coding. Specfically in HTML5, CSS3, SASS, React, jQuery and Bootstrap. I have some cursory knowledge in PHP, HAML, and Javascript but am always looking to improve my current skills and learn new coding languages. I have also used Github and BitBucket for repositories for version control. */}
               I have a strong knowledge of front-end coding languages, most
-              listed below, and am always looking to improve my current skills
-              and learn new coding languages. I have also used Github and
-              BitBucket for repositories for version control.
+              listed below, and responsive design practices. I am always looking
+              to improve my current skills and learn new coding languages. I
+              have also used Github and BitBucket for repositories for version
+              control.
             </p>
-            <Row>
-              <Col xs={6}>
-                <ul className="main-list">
-                  <li>
-                    <i className="fab fa-html5"></i> <span>HTML / Haml</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-css3"></i> <span>CSS3</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-sass"></i> <span>SASS</span>
-                  </li>
-                </ul>
-              </Col>
-              <Col xs={6}>
-                <ul className="main-list">
-                  <li>
-                    <i className="fab fa-bootstrap"></i> <span>Bootstrap</span>{" "}
-                  </li>
-                  <li>
-                    <i className="fab fa-js"></i>{" "}
-                    <span>jQuery / Javascript</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-php"></i> <span>PHP</span>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
+            <ul className="main-list mb-0">
+              <Row>
+                {codeItems}
+                <Col xs={6} sm={4}>
+                  {branchItems}
+                </Col>
+              </Row>
+            </ul>
           </Col>
           <Col md={12} lg={6}>
             <CodingAnimation />

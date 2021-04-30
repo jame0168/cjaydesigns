@@ -44,7 +44,7 @@ export function CodingAnimationRight() {
       },
       "-=1"
     );
-  });
+  }, []);
 
   useEffect(() => {
     var animateScrub = gsap.timeline({
@@ -62,20 +62,7 @@ export function CodingAnimationRight() {
       minWidth: "95%",
       ease: "power2.inOut"
     });
-
-    animateScrub.fromTo(
-      ".fauxIconContainer",
-      {
-        y: 60,
-        opacity: 0
-      },
-      {
-        y: -6,
-        opacity: 1,
-        ease: "power2.inOut"
-      }
-    );
-  });
+  }, []);
 
   return (
     <Col xs={7} className="pl-0 codingAnimationRight">
@@ -85,12 +72,6 @@ export function CodingAnimationRight() {
         <div className="fauxText fauxContent"></div>
         <div className="fauxText fauxContent"></div>
         <div className="fauxText fauxContent"></div>
-        <div className="fauxIconContainer p-2 w-100 d-flex justify-content-between">
-          <div className="fauxIcons"></div>
-          <div className="fauxIcons"></div>
-          <div className="fauxIcons"></div>
-          <div className="fauxIcons"></div>
-        </div>
       </div>
     </Col>
   );

@@ -68,9 +68,7 @@ export function CodingAnimationTop() {
         className="fauxText fauxTitle"
         style={{ background: "rgba(255, 255, 255, 0.5)" }}
       ></div>
-      <div className="fauxUser">
-        {/* <i className="far fa-user-circle"></i> */}
-      </div>
+      <div className="fauxUser"></div>
     </div>
   );
 }

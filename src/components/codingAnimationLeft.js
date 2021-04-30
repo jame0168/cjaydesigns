@@ -31,7 +31,14 @@ export function CodingAnimationLeft() {
         ease: "bounce.out"
       }
     );
-  });
+
+    animateIn.from(".fauxImageContent", {
+      x: -30,
+      opacity: 0,
+      duration: 2,
+      ease: "power3.out"
+    });
+  }, []);
 
   useEffect(() => {
     var animateScrub = gsap.timeline({
@@ -49,12 +56,36 @@ export function CodingAnimationLeft() {
       delay: 4,
       ease: "power2.inOut"
     });
-  });
+  }, []);
 
   return (
     <Col xs={5} className="pr-0 codingAnimationLeft">
       <div className="p-3">
-        <div className="fauxImages"></div>
+        <div className="fauxImages">
+          <div className="fauxImageContent">
+            <div className="fauxSun"></div>
+            <div className="fauxMountains">
+              <div className="fm fmLeft"></div>
+              <div className="fm fmRight"></div>
+            </div>
+            <div
+              className="fauxMountains"
+              style={{
+                right: "6px",
+                top: "100px"
+              }}
+            >
+              <div
+                className="fm fmLeft"
+                style={{
+                  width: "90px",
+                  transform: "translate(-14.25px, 8.7px) rotate(-45deg)"
+                }}
+              ></div>
+              <div className="fm fmRight"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </Col>
   );
