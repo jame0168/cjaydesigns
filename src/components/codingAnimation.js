@@ -23,7 +23,7 @@ export function CodingAnimation() {
       }
     });
 
-    animateIn.from(".screen", {
+    animateIn.from(".fauxScreen", {
       duration: 1,
       boxShadow: "rgb(0 0 0/ 0%) 0px 0px 0px 0px"
     });
@@ -39,7 +39,7 @@ export function CodingAnimation() {
       }
     });
 
-    animateScrub.to(".screen", {
+    animateScrub.to(".fauxScreen", {
       duration: 3,
       width: 280,
       height: 475,
@@ -49,7 +49,7 @@ export function CodingAnimation() {
 
   return (
     <div className="codingAnimation">
-      <div className="screen">
+      <div className="fauxScreen">
         <CodingAnimationTop />
         <Row>
           <CodingAnimationLeft />

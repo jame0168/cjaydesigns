@@ -5,6 +5,20 @@ import { Container, Row, Col } from "react-bootstrap";
 import { DesignAnimation } from "./components/designAnimation";
 
 export function Design() {
+  const designTools = ["Photoshop", "Illustrator", "InDesign"];
+  const designItems = designTools.map((designTool) => (
+    <li key={designTool}>
+      <i className="ri-pencil-ruler-2-line"></i> <span> {designTool} </span>
+    </li>
+  ));
+
+  const prototypeTools = ["Adobe XD", "InVision"];
+  const prototypeItems = prototypeTools.map((prototypeTool) => (
+    <li key={prototypeTool}>
+      <i className="ri-device-line"></i> <span> {prototypeTool} </span>
+    </li>
+  ));
+
   return (
     <section>
       <Container fluid="xl" className="container-xxl sections">
@@ -20,34 +34,16 @@ export function Design() {
               and have played around with InDesign as well. I generally to use
               Adobe XD for UX/UI testing.
             </p>
-            <Row>
-              <Col xs={6}>
-                <ul className="main-list">
-                  <li>
-                    <i className="ri-pencil-ruler-2-line"></i>{" "}
-                    <span>Photoshop</span>
-                  </li>
-                  <li>
-                    <i className="ri-pencil-ruler-2-line"></i>{" "}
-                    <span>Illustrator</span>
-                  </li>
-                  <li>
-                    <i className="ri-pencil-ruler-2-line"></i>{" "}
-                    <span>InDesign</span>
-                  </li>
-                </ul>
-              </Col>
-              <Col xs={6}>
-                <ul className="main-list">
-                  <li>
-                    <i className="ri-device-line"></i> <span>Adobe XD</span>
-                  </li>
-                  <li>
-                    <i className="ri-device-line"></i> <span>InVision</span>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
+            <ul className="main-list">
+              <Row>
+                <Col xs={6} sm={4}>
+                  {designItems}
+                </Col>
+                <Col xs={6} sm={4}>
+                  {prototypeItems}
+                </Col>
+              </Row>
+            </ul>
           </Col>
           <Col xs={12} sm={6} className="h-100">
             <DesignAnimation />

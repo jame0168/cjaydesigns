@@ -33,7 +33,7 @@ export function CodingAnimationLeft() {
     );
 
     animateIn.from(".fauxImageContent", {
-      x: -30,
+      y: 30,
       opacity: 0,
       duration: 2,
       ease: "power3.out"

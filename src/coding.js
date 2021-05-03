@@ -20,9 +20,9 @@ export function Coding() {
 
   for (let i = 0; i < codeTools.length; i += 3) {
     codeItems.push(
-      <Col xs={6} sm={4}>
+      <Col xs={6} sm={4} key={codeItems}>
         {codeTools.slice(i, i + 3).map((codeTool) => (
-          <li key={codeTool.toString()}>
+          <li key={codeTool}>
             <i className="ri-code-s-line"></i> <span> {codeTool} </span>
           </li>
         ))}
@@ -34,7 +34,7 @@ export function Coding() {
 
   const branchTools = ["Github", "BitBucket", "Cloud9"];
   const branchItems = branchTools.map((branchTool) => (
-    <li key={branchTool.toString()}>
+    <li key={branchTool}>
       <i className="ri-git-branch-line"></i> <span> {branchTool} </span>
     </li>
   ));
