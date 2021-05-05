@@ -69,7 +69,7 @@ export function Work() {
                   <i className="fas fa-crown"></i>
                 </Col>
                 <Col xs={12}>
-                  <h3 className="project-title">Nortrax</h3>
+                  <h3 className="project-title">Brandt</h3>
                   <p>
                     This website was made from scratch as my own personal React
                     and GSAP project. This website was created using
@@ -78,13 +78,28 @@ export function Work() {
                 </Col>
               </Row>
             </div>
-            <div className="project" id="website">
+            <div className="project mt-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
                 </Col>
                 <Col xs={12}>
-                  <h3 className="project-title">Nortrax</h3>
+                  <h3 className="project-title">Brandt</h3>
+                  <p>
+                    This website was made from scratch as my own personal React
+                    and GSAP project. This website was created using
+                    Codesandbox, React, GSAP, Bootstrap and SASS.
+                  </p>
+                </Col>
+              </Row>
+            </div>
+            <div className="project mt-3 mr-3 px-3">
+              <Row>
+                <Col xs={12} className="project-icon text-center">
+                  <i className="fas fa-crown"></i>
+                </Col>
+                <Col xs={12}>
+                  <h3 className="project-title">Brandt</h3>
                   <p>
                     This website was made from scratch as my own personal React
                     and GSAP project. This website was created using

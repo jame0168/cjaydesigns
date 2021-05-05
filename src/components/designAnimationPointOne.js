@@ -18,21 +18,32 @@ export function PointAnimationOne() {
       }
     });
 
-    animatePoints.from("#pointTitleOne", {
-      x: -15,
+    animatePoints.from("#pointTitleOne span:first-child", {
+      y: -50,
       opacity: 0,
-      duration: 1,
-      ease: "power3.out"
+      duration: 0.25,
+      ease: "back.out(1)"
     });
+
+    animatePoints.from(
+      "#pointTitleOne span:nth-child(3)",
+      {
+        y: 50,
+        opacity: 0,
+        duration: 0.25,
+        ease: "back.out(1)"
+      },
+      "-=0.25"
+    );
 
     animatePoints.from(
       ".pointLinesOne",
       {
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         ease: "power3.out"
       },
-      "-=1"
+      "-=0.25"
     );
 
     animatePoints.from(".fauxDivTop", {
@@ -77,9 +88,11 @@ export function PointAnimationOne() {
           className="pointTitle text-uppercase text-left d-inline-block mb-0"
           id="pointTitleOne"
         >
-          <span style={{ fontWeight: "400" }}>UX/UI</span>
+          <span className="d-inline-block" style={{ fontWeight: "400" }}>
+            UX/UI
+          </span>
           <br />
-          <span className="font-weight-bold">Design</span>
+          <span className="d-inline-block font-weight-bold">Design</span>
         </h4>
         <div className="fauxContainer d-inline-block">
           <div className="fauxDiv fauxDivTop border-gradient border-gradient-primary"></div>

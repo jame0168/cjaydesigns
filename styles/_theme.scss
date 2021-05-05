@@ -3,13 +3,18 @@
 $primary-color: #333;
 $secondary-color: #EEE;
 $tertiary-color: #FFF;
+$quaternary-color: #7F7F7F;
 
 $primary-gradient: -webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%); 
 // $primary-gradient: -webkit-linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 
 //Font
-$primary-font-stack: 'Futura-PT', sans-serif;
-$secondary-font-stack: 'Roboto', sans-serif;
+$primary-font-stack: 'Futura-PT', Arial, sans-serif;
+$secondary-font-stack: 'Roboto', Arial, sans-serif;
+$user-font-stack: 'Fredericka the Great', 'Futura-PT', sans-serif;
+$prototyping-font-stack: 'Press Start 2P', 'Futura-PT', sans-serif;
+$graphic-font-stack: 'Carter One', 'Futura-PT', sans-serif;
+$design-font-stack: 'Bungee Shade', 'Futura-PT', sans-serif;
 
 .primary-font{
   font-family: $primary-font-stack;
@@ -32,7 +37,7 @@ $size-xl: 64px;
 
 //Border
 .border-gradient {
-  border: 6px solid transparent;
+  border: 5px solid transparent;
   background-image: linear-gradient(white, white), $primary-gradient;
   background-origin: border-box;
   background-clip: content-box, border-box;

@@ -93,7 +93,7 @@
 //Section Sytles
 
 //Coding Sytles
-.screen{
+.fauxScreen{
   margin: 0 auto;
   width: 500px;
   height: 280px;
@@ -185,7 +185,7 @@
     width: 100%;
     height: 20px;
     border-radius: 20px;
-    background: #EEEEEE;
+    background: $secondary-color;
     margin-bottom: 15px;
   }
 
@@ -206,15 +206,29 @@
 }
 
 //Design Sytles
-.designAnimation i{
+
+//Main Arc
+.designAnimation{
+  i{
+    height: 30px;
     text-shadow: $primary-text-shadow;
+  }
+  svg{
+    width: 300px;
+  }
+  path{
+    stroke-width: 10;
+  }
+  path#path2{
+    stroke-dasharray: 0 350;
+    stroke-dashoffset: -175;
+  }
 }
 
 .fauxControlHandle{
   display: inline-block;
-  margin: 120px auto 0;
+  margin: 130px auto 0;
   transform-origin: center center;
-  height: 60px;
 }
 
 .fauxControlBar{
@@ -231,22 +245,134 @@
 }
 
 .fauxControl#controlOne{
-  transform: translate(-15px, 10px);
+  transform: translate(-100px, 12px);
 }
 
 .fauxControl#controlTwo{
-  transform: translate(340px, -15px);
+  transform: translate(100px, -12px);
 }
 
 .fauxPoint{
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 .fauxControlBar,
 .fauxControl,
 .fauxPoint{
   box-shadow: $primary-box-shadow;
+}
+
+.fauxContainer{
+  width: 40px;
+  height: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 2px;
+
+  hr{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 0;
+    border-top: 2px solid $primary-color;
+  }
+
+  .vr{
+    border-width: 2px;
+    height: 25px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+.fauxDiv{
+  width: 100%;
+  height: 25px;
+  border-width: 4px;
+  border-radius: 2px;
+}
+
+.fauxDivLeft,.fauxDivRight{
+  width: 16px;
+  display: inline-block;
+}
+
+//Arc Points
+#pointAnimationOne{
+  width: 150px;
+}
+
+#pointAnimationTwo{
+  width: 215px;
+  height: 80px;
+
+  .fauxBoard{
+    width: 60px;
+    height: 40px;
+    border-width: 4px;
+
+    svg{
+      width: 80%;
+
+      path#drawPath{
+        stroke-width: 80px;
+        stroke-dashoffset: 2000;
+        stroke-dasharray: 2000;
+      }
+    }
+
+    #draw{
+      width: 100%;
+      path#drawPencil{
+        stroke-dashoffset: 0 !important;
+        stroke-dasharray: 0 !important;
+        stroke-width: 1.5px !important;
+        fill: white !important;
+      }
+    }
+  }
+}
+
+#pointAnimationThree{
+  width: 215px;
+  padding-left: 15px;
+
+  .pointTitle span:first-child{
+    font-size: .999em;
+  }
+
+  .fauxContainer{
+    border-width: 4px;
+  
+    .border-gradient{
+      border-width: 4px;
+    }
+  
+    .fauxMobileScreen{
+      height: 40px;
+    }
+  
+    .fauxPanel{
+      width: 33px;
+      height: 12px;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+  
+      .dot{
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-image: $primary-gradient;
+      }
+    }
+    
+    .fauxText{
+      height: 2px;
+      border-radius: 4px;
+      background: $primary-color;
+    }
+  }
 }
 
 //Project Styles
@@ -256,7 +382,7 @@
   min-width: 320px;
   height: 450px;
   border: 2px solid $secondary-color;
-  border-radius: 4px;
+  border-radius: 3px;
   display: inline-block;
 
   .project-icon{
@@ -292,5 +418,4 @@
   .project-title{
     color: $tertiary-color;
   }
-
 }

@@ -64,7 +64,7 @@ export function DesignAnimationHandle() {
     var animateWobble = gsap.timeline({
       scrollTrigger: {
         trigger: ".designAnimation",
-        start: "1000px 130px",
+        start: "1250px 130px",
         markers: true,
         toggleActions: "play none none reset"
       }

@@ -22,27 +22,18 @@ export function Animate() {
               <Col xs={6}>
                 <ul className="main-list">
                   <li>
-                    <i className="fab fa-html5"></i> <span>HTML / Haml</span>
+                    <i className="ri-movie-2-line"></i>{" "}
+                    <span>After Effects</span>
                   </li>
                   <li>
-                    <i className="fab fa-css3"></i> <span>CSS3</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-sass"></i> <span>SASS</span>
+                    <i className="ri-movie-2-line"></i> <span>Photoshop</span>
                   </li>
                 </ul>
               </Col>
               <Col xs={6}>
                 <ul className="main-list">
                   <li>
-                    <i className="fab fa-bootstrap"></i> <span>Bootstrap</span>{" "}
-                  </li>
-                  <li>
-                    <i className="fab fa-js"></i>{" "}
-                    <span>jQuery / Javascript</span>
-                  </li>
-                  <li>
-                    <i className="fab fa-php"></i> <span>PHP</span>
+                    <i className="ri-film-line"></i> <span>Priemere Pro</span>
                   </li>
                 </ul>
               </Col>

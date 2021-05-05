@@ -1,15 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 import { PointAnimationOne } from "./designAnimationPointOne";
+import { PointAnimationTwo } from "./designAnimationPointTwo";
 import { PointAnimationThree } from "./designAnimationPointThree";
 
 export function DesignAnimationPoints() {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(MotionPathPlugin);
+
+  let pointOneRef = useRef(null);
 
   useEffect(() => {
     var animateScrub = gsap.timeline({
@@ -41,6 +44,17 @@ export function DesignAnimationPoints() {
       }
     );
 
+    animateScrub.from("#pointAnimationOne", {
+      scale: 1,
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        start: 0,
+        end: 0,
+        alignOrigin: [1, 0]
+      }
+    });
+
     animateScrub.fromTo(
       "#pointTwo",
       {
@@ -60,6 +74,17 @@ export function DesignAnimationPoints() {
       "-=0.15"
     );
 
+    animateScrub.from("#pointAnimationTwo", {
+      scale: 1,
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        start: 0.5,
+        end: 0.5,
+        alignOrigin: [0.5, 1]
+      }
+    });
+
     animateScrub.fromTo(
       "#pointThree",
       {
@@ -76,6 +101,17 @@ export function DesignAnimationPoints() {
       },
       "-=0.25"
     );
+
+    animateScrub.from("#pointAnimationThree", {
+      scale: 1,
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        start: 1,
+        end: 1,
+        alignOrigin: [0, 0]
+      }
+    });
   }, []);
 
   return (
@@ -89,19 +125,7 @@ export function DesignAnimationPoints() {
         className="fauxPoint rounded border-gradient border-gradient-primary"
         id="pointTwo"
       ></div>
-      <div
-        className="pointAnimation d-flex align-items-center"
-        id="pointAnimationTwo"
-      >
-        <h4
-          className="pointTitle text-uppercase text-left d-inline-block mb-0"
-          id="pointTitleTwo"
-        >
-          <span>Graphic</span>
-          <br />
-          <span>Design</span>
-        </h4>
-      </div>
+      <PointAnimationTwo />
       <div
         className="fauxPoint rounded border-gradient border-gradient-primary"
         id="pointThree"

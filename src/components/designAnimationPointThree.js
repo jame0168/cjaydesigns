@@ -29,7 +29,7 @@ export function PointAnimationThree() {
     var animatePoints = gsap.timeline({
       scrollTrigger: {
         trigger: ".designAnimation",
-        start: "500px 130px",
+        start: "750px 130px",
         markers: true,
         toggleActions: "play none none reset"
       }
@@ -41,18 +41,27 @@ export function PointAnimationThree() {
       ease: "bounce.out"
     });
 
-    animatePoints.to("#pointTitleThree span", {
-      text: "Proto-<br>typing",
+    animatePoints.to("#pointTitleThree span:first-child", {
+      text: "Prototyping",
       duration: 1
     });
 
-    animatePoints.to(".fauxScroll", {
-      y: -175,
-      duration: 5,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1
+    animatePoints.to("#pointTitleThree span:nth-child(3)", {
+      text: " & Mock-ups",
+      duration: 1
     });
+
+    animatePoints.to(
+      ".fauxScroll",
+      {
+        y: -175,
+        duration: 5,
+        ease: "power1.inOut",
+        yoyo: true,
+        repeat: 3
+      },
+      "-=1"
+    );
   }, []);
 
   return (
@@ -74,6 +83,8 @@ export function PointAnimationThree() {
           id="pointTitleThree"
         >
           <span></span>
+          <br />
+          <span className="font-weight-bold"></span>
         </h4>
       </div>
     </React.Fragment>
