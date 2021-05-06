@@ -12,8 +12,6 @@ export function DesignAnimationPoints() {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(MotionPathPlugin);
 
-  let pointOneRef = useRef(null);
-
   useEffect(() => {
     var animateScrub = gsap.timeline({
       scrollTrigger: {

@@ -72,6 +72,10 @@
   }
 }
 
+.clip-svg {
+  clip-path: url(#svgClip);
+}
+
 //List Styles
 .main-list{
   padding: 0px !important;

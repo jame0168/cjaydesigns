@@ -1,0 +1,37 @@
+// Gradient Animation
+.lava-lamp{
+  min-width: 850px;
+  height: 850px;
+}
+
+.lava {
+  background: linear-gradient(60deg, #FF5E62, #FF9966);
+  background-size: 400% 400%;
+  animation: GradientBackground 5s ease infinite;
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+};
+
+// Stars Animation
+.stars {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -50%;
+  display: block;
+  z-index: 0;
+ }
