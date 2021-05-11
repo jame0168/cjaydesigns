@@ -16,7 +16,7 @@ export function Work() {
         <Row>
           <Col className="d-flex flex-nowrap overflow-x-scroll">
             {/* <!-- This Site --> */}
-            <div className="project mt-3 mr-3 px-3">
+            <div className="project my-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center">
                   <i className="ri-vip-crown-line"></i>
@@ -32,7 +32,7 @@ export function Work() {
               </Row>
             </div>
             {/* <!-- Hyre --> */}
-            <div className="project mt-3 mr-3 px-3">
+            <div className="project my-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className=" project-icon text-center">
                   <i className="fas fa-crown"></i>
@@ -48,7 +48,7 @@ export function Work() {
               </Row>
             </div>
             {/* <!-- Nortrax --> */}
-            <div className="project mt-3 mr-3 px-3">
+            <div className="project my-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
@@ -63,7 +63,7 @@ export function Work() {
                 </Col>
               </Row>
             </div>
-            <div className="project mt-3 mr-3 px-3">
+            <div className="project my-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
@@ -78,7 +78,7 @@ export function Work() {
                 </Col>
               </Row>
             </div>
-            <div className="project mt-3 mr-3 px-3">
+            <div className="project my-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
@@ -93,7 +93,7 @@ export function Work() {
                 </Col>
               </Row>
             </div>
-            <div className="project mt-3 mr-3 px-3">
+            <div className="project my-3 mr-3 px-3">
               <Row>
                 <Col xs={12} className="project-icon text-center">
                   <i className="fas fa-crown"></i>
