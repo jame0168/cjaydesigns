@@ -29,7 +29,8 @@ export function CodingAnimation() {
       boxShadow: "rgb(0 0 0/ 0%) 0px 0px 0px 0px",
       borderWidth: "0px",
       background: "rgba( 255, 255, 255, 0.0 )",
-      backdropFilter: "blur( 0.0px )"
+      backdropFilter: "blur( 0.0px )",
+      ease: "linear"
     });
   }, []);
 

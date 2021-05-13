@@ -1,6 +1,97 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 export function DesignAnimation() {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(MotionPathPlugin);
+
+  useEffect(() => {
+    var animateIn = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".designAnimation",
+        start: "top 130px",
+        markers: true,
+        toggleActions: "play none none reset"
+      }
+    });
+
+    animateIn.fromTo(
+      "#fauxTablet",
+      {
+        x: "-70%",
+        y: "-10%",
+        opacity: 0
+      },
+      {
+        x: "-60%",
+        y: "-10%",
+        opacity: 1,
+        duration: 0.5,
+        ease: "back.out(1)"
+      }
+    );
+
+    animateIn.fromTo(
+      "#bottomGlass",
+      {
+        x: "-60%",
+        y: "-35%",
+        opacity: 0
+      },
+      {
+        x: "-50%",
+        y: "-50%",
+        opacity: 1,
+        duration: 0.5,
+        ease: "back.out(1)"
+      },
+      "-=0.1"
+    );
+
+    animateIn.fromTo(
+      "#topGlass",
+      {
+        x: "-60%",
+        y: "-35%",
+        opacity: 0
+      },
+      {
+        x: "-51%",
+        y: "-48%",
+        opacity: 1,
+        duration: 0.5,
+        ease: "back.out(1)"
+      },
+      "-=0.1"
+    );
+
+    animateIn.to("#drawPath", {
+      duration: 1,
+      delay: 0.5,
+      strokeDashoffset: 0,
+      ease: "none"
+    });
+
+    animateIn.to(
+      "#drawPencil",
+      {
+        duration: 0.9,
+        ease: "none",
+        motionPath: {
+          path: "#drawPath",
+          align: "#drawPath",
+          alignOrigin: [0, 1],
+          start: 0,
+          end: 1
+        }
+      },
+      "-=1"
+    );
+  }, []);
+
   return (
     <div className="designAnimation">
       <svg
@@ -27,19 +118,79 @@ export function DesignAnimation() {
           transform="translate(100 100)"
         />
       </svg>
-      <div
-        class="position-absolute center"
-        style={{ transform: "translate(-60%, -10%)" }}
-      >
+      <div className="fauxGlass position-absolute" id="fauxTablet">
         <img alt="Tablet" src="img/clay_tablet.png" />
         <div
-          className="position-absolute center w-100 h-100"
+          className="fauxGlass position-absolute w-100 h-100"
+          id="bottomGlass"
           style={{ perspective: 800 }}
         >
           <div className="fauxScreen position-absolute" />
-          <div className="fauxScreen position-absolute" id="draw" />
+        </div>
+        <div
+          className="fauxGlass position-absolute w-100 h-100"
+          id="topGlass"
+          style={{ perspective: 800 }}
+        >
+          <div className="fauxScreen position-absolute" id="draw">
+            <svg version="1.1" viewBox="0 0 1000 750">
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#ff9966" />
+                  <stop offset="100%" stopColor="#ff5e62" />
+                </linearGradient>
+                <filter id="shadow">
+                  <feDropShadow
+                    dx="0"
+                    dy="5"
+                    stdDeviation="5"
+                    floodOpacity="0.15"
+                  />
+                </filter>
+              </defs>
+              <g stroke="url(#gradient)" filter="url(#shadow)">
+                <path
+                  id="drawPath"
+                  d="m41 373c49-115.5 97.5-231 153-231 111 0 195 463 306 462.5s195-462.5 306-462.5c55.5 0 104.5 115.5 153 231"
+                  strokeLinecap="round"
+                />
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
+      {/* <svg
+        id="pencil"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <defs>
+          <filter id="shadow">
+            <feDropShadow dx="0" dy="5" stdDeviation="5" floodOpacity="0.15" />
+          </filter>
+        </defs>
+        <g>
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            id="drawPencil"
+            stroke="#212529"
+            filter="url(#shadow)"
+            fill="white"
+            strokeDasharray="0"
+            strokeoffset="0"
+            d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+          />
+        </g>
+      </svg> */}
     </div>
   );
 }
