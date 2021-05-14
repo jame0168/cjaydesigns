@@ -2,11 +2,13 @@ import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import { AnimateAnimation } from "./components/animateAnimation";
+
 export function Animate() {
   return (
     <section>
       <Container fluid="xl" className="container-xxl sections">
-        <Row className="sticky t-130">
+        <Row className="sticky d-flex align-items-center sections-content t-130">
           <Col xs={12} sm={{ span: 5, offset: 1 }}>
             <h2 className="display-4 text-uppercase font-weight-bold">
               <span className="underline--magical">Animation.</span>
@@ -40,7 +42,7 @@ export function Animate() {
             </Row>
           </Col>
           <Col xs={12} sm={6}>
-            2 of 2
+            <AnimateAnimation />
           </Col>
         </Row>
       </Container>

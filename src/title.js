@@ -31,9 +31,14 @@ export function Title() {
               lg={6}
               className="title-container d-flex align-items-center"
             >
-              <div className="mx-auto lava-lamp">
+              <div className="mx-auto lava-lamp position-relative">
                 <div className="lava clip-svg w-100 h-100">
                   <div className="stars"></div>
+                  <img
+                    alt="Ark Academy Astronaut"
+                    src="img/clay_astronaut_main.png"
+                    className="position-absolute center w-100"
+                  />
                 </div>
                 <svg width="0" height="0">
                   <clipPath id="svgClip" clipPathUnits="objectBoundingBox">
