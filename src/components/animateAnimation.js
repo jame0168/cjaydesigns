@@ -41,11 +41,28 @@ export function AnimateAnimation() {
         </defs>
         <path
           fill="url(#gradientFill)"
-          d="M37.6,-55.7C52,-49.4,69,-44.3,77,-33.3C85.1,-22.2,84.1,-5.1,80.1,10.3C76,25.8,68.8,39.6,57.1,44.9C45.4,50.3,29.2,47.2,15.1,51.2C1,55.2,-10.9,66.4,-25.1,69.5C-39.3,72.6,-55.8,67.7,-61,56C-66.2,44.4,-60,26.1,-61.2,9.5C-62.4,-7,-71,-21.7,-66.4,-29.8C-61.8,-37.9,-44.1,-39.4,-30.8,-46.3C-17.6,-53.2,-8.8,-65.4,1.4,-67.6C11.7,-69.9,23.3,-62.1,37.6,-55.7Z"
+          d="M48.3,-62.2C62.8,-55.9,75,-42.1,80,-26.1C85.1,-10.1,83,8.1,76,23.2C69,38.3,57.1,50.2,43.6,61.8C30.1,73.3,15.1,84.4,-1.7,86.8C-18.5,89.1,-37,82.7,-52.3,71.8C-67.6,60.9,-79.8,45.4,-81.9,29C-84,12.6,-76,-4.8,-67.7,-19.4C-59.4,-34,-50.7,-46,-39.4,-53.3C-28,-60.7,-14,-63.4,1.4,-65.4C16.9,-67.4,33.8,-68.5,48.3,-62.2Z"
           transform="translate(100 100)"
         />
       </svg>
-      <div className="fauxScreen position-absolute center" />
+      <div className="fauxScreen position-absolute center d-flex">
+        <div className="fauxTools d-inline-block">
+          <div className="fauxScreen bd-none border-top-0 border-bottom-0 border-left-0 w-100 h-100 text-center">
+            <i className="ri-cursor-fill"></i>
+            <i className="ri-search-line"></i>
+            <i className="ri-video-add-line"></i>
+            <i className="ri-drag-move-2-line"></i>
+            <i className="ri-pen-nib-line"></i>
+            <i className="ri-text"></i>
+            <i className="ri-brush-line"></i>
+            <i className="ri-pushpin-line"></i>
+          </div>
+        </div>
+        <div className="fauxArea d-inline-block">
+          <div className="fauxScreen bd-none mx-auto mt-3 w-75"></div>
+          <div className="fauxScreen bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3"></div>
+        </div>
+      </div>
     </div>
   );
 }

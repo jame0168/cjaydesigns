@@ -97,12 +97,12 @@ export function DesignAnimation() {
           transform="translate(100 100)"
         />
       </svg>
-      <div className="fauxGlass position-absolute" id="fauxTablet">
+      <div className="position-absolute center-no-translate" id="fauxTablet">
         <img alt="Tablet" src="img/clay_tablet.png" />
         <DesignFG id="bottomGlass" />
         <DesignFG id="topGlass" innerID="draw" content={true} />
       </div>
-      <div className="fauxGlass position-absolute" id="drawnPencil">
+      <div className="position-absolute center-no-translate" id="drawnPencil">
         <img alt="Stylus" src="img/clay_stylus.png" />
       </div>
     </div>
