@@ -4,7 +4,6 @@ import { Container } from "react-bootstrap";
 
 import { Title } from "./title";
 import { Skills } from "./components/skills/skills";
-import { Animate } from "./animate";
 import { Work } from "./work";
 
 export function Main() {
@@ -14,7 +13,6 @@ export function Main() {
         <div className="h-100">
           <Title />
           <Skills />
-          <Animate />
           <Work />
         </div>
       </Container>

@@ -1,7 +1,7 @@
 import React from "react";
 
-import { NavBar } from "./Nav";
-import { Main } from "./Main";
+import { NavBar } from "./nav";
+import { Main } from "./main";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/app.scss";

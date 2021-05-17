@@ -13,7 +13,7 @@ export function Title() {
         scale: 1.25,
         x: "-30%",
         y: "-23%",
-        duration: 3.5,
+        duration: 5,
         yoyo: true,
         repeat: -1,
         ease: "power1.inOut"
