@@ -77,6 +77,7 @@ export function DesignAnimation() {
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
         transform="scale(1.15)"
+        className="fade--in"
       >
         <defs>
           <linearGradient

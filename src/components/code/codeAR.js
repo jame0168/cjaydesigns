@@ -6,7 +6,7 @@ import { Col } from "react-bootstrap";
 
 export function CodeAR() {
   // const [screen, setScreen] = useState(".screen");
-  // gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     var animateIn = gsap.timeline({
@@ -65,7 +65,7 @@ export function CodeAR() {
       },
       {
         duration: 1.5,
-        x: 5,
+        x: 3,
         y: 5,
         rotation: -67,
         width: "45%",

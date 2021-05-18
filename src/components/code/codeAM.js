@@ -101,7 +101,7 @@ export function CodeAM() {
       "-=1"
     );
 
-    animateScrub.from(".fauxSelection p,ul", {
+    animateScrub.from(".fauxSelection p, .fauxSelection ul", {
       opacity: 0,
       duration: 0.5,
       ease: "linear"
@@ -115,7 +115,7 @@ export function CodeAM() {
         <Row>
           <Col xs={4} className="fauxSelect">
             <div className="fauxSelection w-100 p-2">
-              <p id="fauxStats">
+              <div id="fauxStats">
                 <p className="font-weight-bold mb-1">About</p>
                 <p className="mb-2">
                   A very elegant, refined and detailed chardonnay that captures
@@ -136,7 +136,7 @@ export function CodeAM() {
                   <li className="font-weight-bold">Sugar Content</li>
                   <li>2 g/L</li>
                 </ul>
-              </p>
+              </div>
             </div>
           </Col>
           <Col xs={4} className="fauxSelect">

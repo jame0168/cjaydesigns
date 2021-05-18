@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 p{
   font-family: $secondary-font-stack;
   line-height: 1.5;
@@ -41,15 +45,8 @@ svg {
   transform: translateZ(0);
 }
 
-path{
-  stroke-width: 7;
-  fill: transparent;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-}
-
 .vr{
-  border-left:1px solid $primary-color;;
+  border-left:1px solid $primary-color;
   display: inline-block;
   height:100%;
 }

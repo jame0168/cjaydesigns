@@ -6,7 +6,7 @@ export function DesignFG(props) {
   return (
     <div
       id={props.id}
-      className="fauxGlass position-absolute w-100 h-100"
+      className="fauxGlass position-absolute w-100 h-100 center-no-translate"
       style={{ perspective: 800 }}
     >
       <DesignFS id={props.innerID} content={props.content} />

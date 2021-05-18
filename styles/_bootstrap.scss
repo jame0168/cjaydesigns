@@ -12,3 +12,48 @@
   background-color: transparent !important;
   height: 100%;
 }
+
+//Pills
+.badge-primary{
+  color: #000 !important;
+  background-color: transparent;
+  border-color: #BBBBBB !important;
+  border-width: 2px !important;
+}
+
+.badge-pill {
+  padding-right: .6em;
+  padding-left: .6em;
+  border-radius: 10rem !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+//Button
+.btn{
+  border-radius: 1.5em;
+}
+
+.btn-default{
+  @extend .badge-primary;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus{
+  color: #FFF !important;
+  background-color: #000;
+  border-color: #000 !important;
+  border-width: 2px !important;
+}

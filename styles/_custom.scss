@@ -1,9 +1,13 @@
 // Custom Personal Styles
 .center{
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.center-no-translate{
+  top: 50%;
+  left: 50%;
 }
 
 .sticky{
@@ -19,6 +23,12 @@
   height: 500px;
 }
 
+.hr{
+  height: 100%;
+  width: 1px;
+  border: 1px solid;
+}
+
 //Custom Top Styles
 .t-0{
   top: 0;
@@ -28,13 +38,40 @@
   top: 130px;
 }
 
+//Custom Bottom Styles
+.b-0{
+  bottom: 0;
+}
+
+.b-35{
+  bottom: 35px;
+}
+
 //Custom Padding Styles
 .pt-130{
   padding-top: 130px;
 }
 
+.dot{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: $primary-gradient;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 0.45;
+}
+
 
 //Title Sytles
+.fauxAstronaut{
+  top: 50%;
+  left: 50%;
+  transform: scale(1.25);
+}
+
 .title-container{
   position: relative;
   height: 100vh;
@@ -95,286 +132,216 @@
 }
 
 //Section Sytles
-
-//Coding Sytles
 .fauxScreen{
   margin: 0 auto;
-  width: 500px;
-  height: 280px;
   border-radius: 10px;
+  background: rgba( 255, 255, 255, 0.45 );
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   // box-shadow: rgba(64, 62, 61, 0.15) 0px 5px 15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   box-shadow: rgba(64, 62, 61, 0.15) 0px 5px 15px;
+  backdrop-filter: blur( 4.0px );
+  -webkit-backdrop-filter: blur( 4.0px );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
   overflow: hidden;
+}
 
-  .fauxHeader{
-    position: relative;
-    margin-top: -50px;
-    padding-top: 15px;
-    padding-left: 15px;
-    width: 100%;
-    height: 50px;
-    background: $primary-gradient;
+.activeOption{
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background: $secondary-color;
+  left: 20px;
+  top: 17px;
+}
 
-    i{
-      font-size: 28px;
-      background: #FFFFFF;
-      position: absolute;
-      right: 5px;
-      top: 5px;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .fauxUser{
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      right: 10px;
-      top: 10px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.51);
-      backdrop-filter: blur(5px);
-    }
-  }
-
-  .fauxImages{
-    width: 100%;
-    height: 33vh;
-    background: $primary-gradient;
-    border-radius: 4px;
-    max-height: 200px;
-    transform: translate(0px, 0px);
-    overflow: hidden;
-
-    .fauxImageContent{
-      position: relative;
-
-      .fauxSun{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 25px;
-        top: 25px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.51);
-        backdrop-filter: blur(5px);
-      }
-      
-      .fauxMountains{
-        position: absolute;
-        top: 74.5px;
-        right: -60px;
-        width: 100%;
-
-        .fm{
-          height: 15px;
-          background: rgba(255, 255, 255, 0.51);
-        }
-
-        .fmLeft{
-          width: 65px;
-          border-top-right-radius: 8px;
-          transform: translateX(7px) rotate(-45deg);
-        }
-
-        .fmRight{
-          width: 200px;
-          transform: translate(33px, 43.3px) rotate(45deg);
-        }
-      }
-    }
-  }
-
-  .fauxText{
-    width: 100%;
-    height: 20px;
-    border-radius: 20px;
-    background: $secondary-color;
-    margin-bottom: 15px;
-  }
-
-  .fauxTitle{
-    @extend .fauxText;
-    width: 75%;
-    background: $primary-gradient;
-    margin-bottom: 25px;
-  }
-
-  .fauxIcons{
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
-    background: $primary-gradient;
-  }
+//Coding Sytles
+.codingAnimation{
   
+  .fauxScreen{
+    width: 500px;
+    height: 280px;
+
+    .fauxSiteContent{
+      height: calc(100% - 100px);
+    }
+    
+    .fauxHeader{
+      position: relative;
+      margin-top: -50px;
+      padding-top: 15px;
+      padding-left: 15px;
+      width: 100%;
+      height: 50px;
+
+      .fauxLogo{
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        top: 7px;
+        left: 10px;
+      }
+
+      .fauxOptions{
+        left: 115px;
+        font-size: 9px;
+        color: $secondary-color;
+        font-weight: 600;
+
+        i{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .fauxOptions.fauxFunctions{
+      left: unset;
+      right: 15px;
+      top: 15px;
+  
+      .fauxSearch{
+        border: 2px solid $secondary-color;
+        border-radius: 25px;
+        border-radius: 25px;
+        width: 100px;
+      }
+    }
+
+    h1,
+    h3,
+    h6,
+    p{
+      color: $secondary-color;
+    }
+
+    p{
+      font-size: 0.7em;
+    }
+    
+    img{
+      width: 95%;
+    }
+
+    .fauxButton{
+      @extend p;
+      background: $primary-gradient;
+      color: $tertiary-color;
+      border-radius: 50px;
+    }
+
+    .fauxSelection{
+      height: 125px;
+      border-radius: 4px;
+      background: -webkit-linear-gradient(120deg, rgba(255, 94, 98, 0.4) 0%, rgba(255, 153, 102, 0.4) 100%);
+    }
+  }
+
+  .codeAL{
+    height: 100%;
+    display: flex;
+  }
+
+  .codeAB{
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+
+    .activeOption{
+      left: 49.45%;
+      top: 82.5%;
+    }
+  }
+
+  #fauxStats{ 
+    ul{
+      display: grid;
+      grid-template-columns: 35% 65%;
+      grid-template-rows: auto; 
+      column-gap: 10px;
+      row-gap: 5px;
+    }
+    li,
+    p{
+      font-size: 0.6rem;
+      color: $tertiary-color;
+    }
+  }
 }
 
 //Design Sytles
-
-//Main Arc
 .designAnimation{
-  i{
-    height: 30px;
-    text-shadow: $primary-text-shadow;
-  }
-  svg{
-    width: 300px;
-  }
-  path{
-    stroke-width: 10;
-  }
-  path#path2{
-    stroke-dasharray: 0 350;
-    stroke-dashoffset: -175;
-  }
-}
 
-.fauxControlHandle{
-  display: inline-block;
-  margin: 130px auto 0;
-  transform-origin: center center;
-}
-
-.fauxControlBar{
-  width: 350px;
-  height: 7px;
-  background: $primary-gradient;
-  transform: translate(0px, 25px);
-}
-
-.fauxControl{
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-}
-
-.fauxControl#controlOne{
-  transform: translate(-100px, 12px);
-}
-
-.fauxControl#controlTwo{
-  transform: translate(100px, -12px);
-}
-
-.fauxPoint{
-  width: 25px;
-  height: 25px;
-}
-
-.fauxControlBar,
-.fauxControl,
-.fauxPoint{
-  box-shadow: $primary-box-shadow;
-}
-
-.fauxContainer{
-  width: 40px;
-  height: 60px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 2px;
-
-  hr{
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border: 0;
-    border-top: 2px solid $primary-color;
+  .fauxScreen{
+    width: 1280px;
+    height: 800px;
+    border-radius: 35px;
+    border-width: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    transform: scaleX(0.3) scaleY(0.3) scaleZ(0.3) rotateX(37deg) rotateY(30deg) rotateZ(-24deg) translate(-70%, -160%) skewX(16deg) skewY(0deg);
+    box-shadow: 0 19px 38px rgba(64, 62, 61, 0.15), 0 15px 12px rgba(64, 62, 61, 0);
   }
 
-  .vr{
-    border-width: 2px;
-    height: 25px;
-    margin-left: 3px;
-    margin-right: 3px;
+  .fauxScreen#draw{
+    background: rgba(255, 255, 255, 0.5);
+    transform: scaleX(0.3) scaleY(0.3) scaleZ(0.3) rotateX(37deg) rotateY(30deg) rotateZ(-24deg) translate(-54%, -185%) skewX(16deg) skewY(0deg);
+  }
+
+  path#drawnPath{
+    stroke-width: 25;
+    fill: transparent;
+    stroke-dashoffset: 2000;
+    stroke-dasharray: 2000;
   }
 }
 
-.fauxDiv{
-  width: 100%;
-  height: 25px;
-  border-width: 4px;
-  border-radius: 2px;
-}
+//Animation Styles
+.animateAnimation{
+  .fauxScreen{
+    position: relative;
+    width: 510px;
+    height: 340px;
+    background: rgba( 255, 255, 255, 0.35);
+  }
 
-.fauxDivLeft,.fauxDivRight{
-  width: 16px;
-  display: inline-block;
-}
+  .fauxScreen.bd-none{
+    backdrop-filter: none;
+  }
 
-//Arc Points
-#pointAnimationOne{
-  width: 150px;
-}
-
-#pointAnimationTwo{
-  width: 215px;
-  height: 80px;
-
-  .fauxBoard{
-    width: 60px;
-    height: 40px;
-    border-width: 4px;
-
-    svg{
-      width: 80%;
-
-      path#drawPath{
-        stroke-width: 80px;
-        stroke-dashoffset: 2000;
-        stroke-dasharray: 2000;
-      }
+  .fauxArea{
+    .fauxScreen:first-child{
+      height: 215px;
+      box-shadow: none;
+      border: none;
+      border-radius: 0px;
+      backdrop-filter: none;
+      background: none;
     }
 
-    #draw{
-      width: 100%;
-      path#drawPencil{
-        stroke-dashoffset: 0 !important;
-        stroke-dasharray: 0 !important;
-        stroke-width: 1.5px !important;
-        fill: white !important;
+    .fauxScreen:nth-child(2){
+      height: 130px;
+      border-radius: 0px;
+      box-shadow: none;
+      overflow: visible;
+
+      .col-2, 
+      .col-3{
+        height: 1.10rem;
+        background: -webkit-linear-gradient(120deg, rgba(255, 94, 98, 0.4) 0%, rgba(255, 153, 102, 0.4) 100%);
       }
     }
   }
-}
 
-#pointAnimationThree{
-  width: 215px;
-  padding-left: 15px;
-
-  .pointTitle span:first-child{
-    font-size: .999em;
-  }
-
-  .fauxContainer{
-    border-width: 4px;
-  
-    .border-gradient{
-      border-width: 4px;
+  .fauxScrub{
+    width: 1.5rem;
+    height: 125px;
+    top: -30px;
+    z-index: 50;
+    i{
+      transform: rotate(180deg);
     }
-  
-    .fauxMobileScreen{
-      height: 40px;
-    }
-  
-    .fauxPanel{
-      width: 33px;
-      height: 12px;
-      border-right: none;
-      border-left: none;
-      border-bottom: none;
-  
-      .dot{
-        width: 2px;
-        height: 2px;
-        border-radius: 50%;
-        background-image: $primary-gradient;
-      }
-    }
-    
-    .fauxText{
-      height: 2px;
-      border-radius: 4px;
-      background: $primary-color;
+    div{
+      transform: translateY(-10px);
+      width: 1px;
     }
   }
 }
@@ -385,41 +352,21 @@
   width: 33%;
   min-width: 320px;
   height: 450px;
-  border: 2px solid $secondary-color;
-  border-radius: 3px;
+  border-radius: 10px;
   display: inline-block;
 
-  .project-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 180px;
-    i{
-      font-size: 5.25em;
+  &-content{
+    mix-blend-mode: multiply;
+    opacity: 0.56;
+    font-weight: 700;
+    p{
+      font-size: 0.85em;
     }
-  }
-  
-  .project-title{
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-  }
- 
-}
-
-.project:hover{
-  background: $primary-gradient;
-  color: $tertiary-color;
-
-  .project-icon{
-    i{
-      background: $tertiary-color;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    button{
+      bottom: 20px;
     }
-  }
-
-  .project-title{
-    color: $tertiary-color;
+    button:hover{
+      bottom: 20px;
+    }
   }
 }

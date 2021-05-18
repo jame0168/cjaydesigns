@@ -2,11 +2,10 @@ import React, { useEffect } from "react";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { Row, Col } from "react-bootstrap";
 
 export function AnimateAnimation() {
   gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(MotionPathPlugin);
 
   useEffect(() => {
     var animateIn = gsap.timeline({
@@ -25,6 +24,7 @@ export function AnimateAnimation() {
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
         transform="scale(1.15)"
+        className="fade--in"
       >
         <defs>
           <linearGradient
@@ -45,22 +45,30 @@ export function AnimateAnimation() {
           transform="translate(100 100)"
         />
       </svg>
-      <div className="fauxScreen position-absolute center d-flex">
-        <div className="fauxTools d-inline-block">
-          <div className="fauxScreen bd-none border-top-0 border-bottom-0 border-left-0 w-100 h-100 text-center">
-            <i className="ri-cursor-fill"></i>
-            <i className="ri-search-line"></i>
-            <i className="ri-video-add-line"></i>
-            <i className="ri-drag-move-2-line"></i>
-            <i className="ri-pen-nib-line"></i>
-            <i className="ri-text"></i>
-            <i className="ri-brush-line"></i>
-            <i className="ri-pushpin-line"></i>
-          </div>
-        </div>
-        <div className="fauxArea d-inline-block">
+      <div className="fauxScreen position-absolute center">
+        <div className="fauxArea w-100">
           <div className="fauxScreen bd-none mx-auto mt-3 w-75"></div>
-          <div className="fauxScreen bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3"></div>
+          <div className="fauxScreen bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3">
+            <div className="fauxScrub position-absolute">
+              <i className="ri-home-6-fill"></i>
+              <div className="border h-75 mx-auto"></div>
+            </div>
+            <Row>
+              <Col xs={2} className="rounded" />
+            </Row>
+            <Row>
+              <Col xs={{ span: 3, offset: 2 }} className="rounded" />
+            </Row>
+            <Row>
+              <Col xs={{ span: 2, offset: 5 }} className="rounded" />
+            </Row>
+            <Row>
+              <Col xs={{ span: 3, offset: 7 }} className="rounded" />
+            </Row>
+            <Row>
+              <Col xs={{ span: 2, offset: 10 }} className="rounded" />
+            </Row>
+          </div>
         </div>
       </div>
     </div>
