@@ -24,8 +24,6 @@ export function Title() {
       "#fauxPhone",
       {
         width: 140,
-        top: "7%",
-        left: "15%",
         x: "7%",
         y: "15%",
         rotate: 15

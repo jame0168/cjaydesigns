@@ -47,26 +47,34 @@ export function AnimateAnimation() {
       </svg>
       <div className="fauxScreen position-absolute center">
         <div className="fauxArea w-100">
-          <div className="fauxScreen bd-none mx-auto mt-3 w-75"></div>
+          <div className="fauxScreen position-relative bd-none mx-auto mt-3 w-75">
+            <img
+              alt="ball"
+              src="img/clay_ball.png"
+              className="h-25"
+              id="faux--ball"
+            />
+            <div className="faux--floor-wrap d-flex position-absolute w-100 h-25 b-0 l-0">
+              <div className="faux--floor h-100" />
+              <div className="faux--floor h-100 mt-4" />
+            </div>
+          </div>
           <div className="fauxScreen bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3">
             <div className="fauxScrub position-absolute">
               <i className="ri-home-6-fill"></i>
               <div className="border h-75 mx-auto"></div>
             </div>
             <Row>
-              <Col xs={2} className="rounded" />
+              <Col xs={3} className="rounded" />
             </Row>
             <Row>
-              <Col xs={{ span: 3, offset: 2 }} className="rounded" />
+              <Col xs={{ span: 3, offset: 3 }} className="rounded" />
             </Row>
             <Row>
-              <Col xs={{ span: 2, offset: 5 }} className="rounded" />
+              <Col xs={{ span: 3, offset: 6 }} className="rounded" />
             </Row>
             <Row>
-              <Col xs={{ span: 3, offset: 7 }} className="rounded" />
-            </Row>
-            <Row>
-              <Col xs={{ span: 2, offset: 10 }} className="rounded" />
+              <Col xs={{ span: 3, offset: 9 }} className="rounded" />
             </Row>
           </div>
         </div>

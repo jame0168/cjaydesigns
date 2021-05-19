@@ -31,6 +31,7 @@ export function DesignAnimation() {
         x: "-60%",
         y: "-20%",
         opacity: 1,
+        delay: 1,
         duration: 0.5,
         ease: "back.out(1)"
       }
