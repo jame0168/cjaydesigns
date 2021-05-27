@@ -9,7 +9,11 @@ export function NavBar() {
     <div className="NavBar">
       <Navbar expand="lg" fixed="top">
         <Container fluid="xl" className="container-xxl">
-          <Navbar.Brand href="#home" style={{ fontSize: "30" }}>
+          <Navbar.Brand
+            href="#home"
+            className="overflow-hidden"
+            style={{ fontSize: "30" }}
+          >
             {/* <a className="special" href="#toTop">
               <i className="icon-logo-white"></i>
             </a> */}

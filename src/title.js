@@ -79,7 +79,7 @@ export function Title() {
                 </div>
                 <img
                   alt="Ark Academy Astronaut"
-                  src="img/clay_astronaut_top.png"
+                  src="img/clay_astronaut_overlay.png"
                   className="position-absolute  center-no-translate w-100 fauxAstronaut"
                 />
                 <svg width="0" height="0">

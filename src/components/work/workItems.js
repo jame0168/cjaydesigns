@@ -23,10 +23,10 @@ export const works = [
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: (
       <img
-        alt="hyre"
+        alt="Clay Cloche"
         className="position-absolute center w-100"
-        src="img/hyre.png"
-        style={{ transform: "scale(1.75) translate(-20%, -15%)" }}
+        src="img/clay_hyre.png"
+        style={{ transform: "scale(2) translate(-15%, -11%)" }}
       />
     ),
     link: ""
@@ -34,14 +34,21 @@ export const works = [
   {
     title: "Nortrax",
     description:
-      "This website was made from scratch as my own personal React and GSAP project. This website was created using Codesandbox, React, GSAP, Bootstrap and SASS.",
+      "Nortrax is a heavy equipment supplier, focused mainly on the sale of John Deere construction and forestry equipment.",
     background: {
       background: "rgb(254,190,16)",
       background:
         "radial-gradient(circle, rgba(254,190,16,1) 30%, rgba(215,158,0,1) 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
-    img: "",
+    img: (
+      <img
+        alt="Clay Skidsteer"
+        className="position-absolute center w-100"
+        src="img/clay_nortrax.png"
+        style={{ transform: "scale(1.65) translate(-25%, -15%)" }}
+      />
+    ),
     link: ""
   },
   {
@@ -56,10 +63,10 @@ export const works = [
     categories: ["Coding", "UX/UI Design"],
     img: (
       <img
-        alt="hyre"
+        alt="Clay Tractor"
         className="position-absolute center w-100"
-        src="img/brandt.png"
-        style={{ transform: "scale(1.3) translate(-25%, -15%)" }}
+        src="img/clay_brandt.png"
+        style={{ transform: "scale(1.55) translate(-25%, -15%)" }}
       />
     ),
     link: ""

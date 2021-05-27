@@ -20,6 +20,11 @@ ul, li{
   list-style-type: none;
 }
 
+
+a:hover{
+  text-decoration: none;
+}
+
 i{
   font-size: $size-sm;
   background: $primary-gradient;

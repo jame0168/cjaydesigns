@@ -16,7 +16,7 @@ export function DesignAnimation() {
         trigger: ".designAnimation",
         start: "top 130px",
         markers: true,
-        toggleActions: "play none none reset"
+        toggleActions: "play none none none"
       }
     });
 

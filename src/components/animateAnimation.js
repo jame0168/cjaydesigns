@@ -10,12 +10,79 @@ export function AnimateAnimation() {
   useEffect(() => {
     var animateIn = gsap.timeline({
       scrollTrigger: {
-        trigger: ".designAnimation",
+        trigger: ".animateAnimation",
         start: "top 130px",
         markers: true,
         toggleActions: "play none none reset"
       }
     });
+
+    animateIn.to("#faux--slide", { autoAlpha: 1, x: "0%", duration: 1 });
+    animateIn.from(".faux--top", {
+      y: "-100%",
+      ease: "back.out",
+      duration: 0.5
+    });
+
+    animateIn.from(
+      ".faux--center",
+      { scale: 0, ease: "back.out", duration: 0.5 },
+      "-=0.5"
+    );
+
+    animateIn.from(
+      ".faux--bottom",
+      { y: 100, ease: "back.out", duration: 0.5 },
+      "-=0.5"
+    );
+
+    animateIn.to("#faux--ball", {
+      opacity: 1,
+      y: 68,
+      duration: 1,
+      delay: 1,
+      ease: "bounce.out"
+    });
+
+    animateIn.to(
+      ".faux--scrub",
+      {
+        right: 0,
+        duration: 4,
+        ease: "linear"
+      },
+      "-=1"
+    );
+
+    animateIn.to(
+      "#faux--ball",
+      {
+        x: 165,
+        duration: 2,
+        ease: "power1.inOut"
+      },
+      "-=3"
+    );
+
+    animateIn.to(
+      "#faux--ball",
+      {
+        y: 93,
+        duration: 0.33,
+        ease: "bounce.out"
+      },
+      "-=1"
+    );
+
+    animateIn.to(
+      "#faux--ball",
+      {
+        x: 325,
+        duration: 1,
+        ease: "power1.out"
+      },
+      "-=1"
+    );
   }, []);
 
   return (
@@ -45,37 +112,40 @@ export function AnimateAnimation() {
           transform="translate(100 100)"
         />
       </svg>
-      <div className="fauxScreen position-absolute center">
-        <div className="fauxArea w-100">
-          <div className="fauxScreen position-relative bd-none mx-auto mt-3 w-75">
-            <img
-              alt="ball"
-              src="img/clay_ball.png"
-              className="h-25"
-              id="faux--ball"
-            />
-            <div className="faux--floor-wrap d-flex position-absolute w-100 h-25 b-0 l-0">
-              <div className="faux--floor h-100" />
-              <div className="faux--floor h-100 mt-4" />
+      <div className="faux--screen-wrap position-absolute center overflow-hidden p-3">
+        <div className="fauxScreen w-100 h-100" id="faux--slide">
+          <div className="fauxScreen faux--top bd-none border-top-0 border-left-0 border-right-0 w-100" />
+          <div className="faux--area w-100">
+            <div className="fauxScreen faux--center position-relative bd-none mx-auto mt-3 w-75">
+              <img
+                alt="ball"
+                src="img/clay_ball.png"
+                className="h-25"
+                id="faux--ball"
+              />
+              <div className="faux--floor-wrap d-flex position-absolute w-100 b-0 l-0">
+                <div className="faux--floor h-100" />
+                <div className="faux--floor h-100 mt-4" />
+              </div>
             </div>
-          </div>
-          <div className="fauxScreen bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3">
-            <div className="fauxScrub position-absolute">
-              <i className="ri-home-6-fill"></i>
-              <div className="border h-75 mx-auto"></div>
+            <div className="fauxScreen faux--bottom bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3">
+              <div className="faux--scrub position-absolute">
+                <i className="ri-home-6-fill"></i>
+                <div className="border h-75 mx-auto"></div>
+              </div>
+              <Row>
+                <Col xs={3} className="rounded" />
+              </Row>
+              <Row>
+                <Col xs={{ span: 6, offset: 3 }} className="rounded" />
+              </Row>
+              <Row>
+                <Col xs={{ span: 1, offset: 9 }} className="rounded" />
+              </Row>
+              <Row>
+                <Col xs={{ span: 2, offset: 10 }} className="rounded" />
+              </Row>
             </div>
-            <Row>
-              <Col xs={3} className="rounded" />
-            </Row>
-            <Row>
-              <Col xs={{ span: 3, offset: 3 }} className="rounded" />
-            </Row>
-            <Row>
-              <Col xs={{ span: 3, offset: 6 }} className="rounded" />
-            </Row>
-            <Row>
-              <Col xs={{ span: 3, offset: 9 }} className="rounded" />
-            </Row>
           </div>
         </div>
       </div>

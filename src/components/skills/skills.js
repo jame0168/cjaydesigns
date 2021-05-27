@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { skills } from "./skillItems";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Container, Row, Col } from "react-bootstrap";
+
+import { skills } from "./skillItems";
 
 export function Skills() {
   gsap.registerPlugin(ScrollTrigger);
