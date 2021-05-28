@@ -12,7 +12,7 @@ export function DesignCT() {
     var animateIn = gsap.timeline({
       scrollTrigger: {
         trigger: ".designAnimation",
-        start: "top -130px",
+        start: "top 130px",
         markers: true,
         toggleActions: "play none none reset"
       }
