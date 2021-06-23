@@ -2,6 +2,22 @@
 .lava-lamp{
   min-width: 850px;
   height: 850px;
+
+  @media all and (max-width: 1600px) {
+    min-width: 600px;
+    height: 600px;
+  }
+
+  @media all and (max-width: 1200px) {
+    min-width: 450px;
+    height: 450px;
+  }
+
+  @media all and (max-width: 576px) {
+    min-width: 300px;
+    height: 300px;
+  }
+
 }
 
 .lava {
@@ -23,6 +39,30 @@
     background-position: 0% 50%;
   }
 };
+
+.fauxAstronaut{
+  top: 50%;
+  left: 50%;
+  transform: scale(1.25);
+}
+
+#fauxPhone{
+  top: 7%;
+  left: 15%;
+  width: 140px;
+
+  @media all and (max-width: 1600px) {
+    width: 100px
+  }
+
+  @media all and (max-width: 1200px) {
+    width: 75px
+  }
+
+  @media all and (max-width: 576px) {
+    width: 50px;
+  }
+}
 
 // Stars Animation
 .stars {

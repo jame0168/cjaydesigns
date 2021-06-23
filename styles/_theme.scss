@@ -11,13 +11,13 @@ $primary-gradient: -webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%);
 //Font
 $primary-font-stack: 'Futura-PT', Arial, sans-serif;
 $secondary-font-stack: 'Roboto', Arial, sans-serif;
-$user-font-stack: 'Fredericka the Great', 'Futura-PT', sans-serif;
-$prototyping-font-stack: 'Press Start 2P', 'Futura-PT', sans-serif;
-$graphic-font-stack: 'Carter One', 'Futura-PT', sans-serif;
-$design-font-stack: 'Bungee Shade', 'Futura-PT', sans-serif;
 
 .primary-font{
   font-family: $primary-font-stack;
+}
+
+.secondary-font{
+  font-family: $secondary-font-stack;
 }
 
 //Sizes
