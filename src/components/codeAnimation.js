@@ -19,7 +19,6 @@ export function CodeAnimation() {
         trigger: ".codingAnimation",
         start: "top 130px",
         end: "+=1250",
-        markers: true,
         toggleActions: "play none none none"
       }
     });
@@ -53,7 +52,7 @@ export function CodeAnimation() {
   }, []);
 
   return (
-    <div className="codingAnimation">
+    <div className="codingAnimation animation-container">
       <svg
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"

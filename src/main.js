@@ -10,13 +10,12 @@ import { About } from "./components/about/about";
 export function Main() {
   return (
     <div className="Main">
-      <Container fluid="xl" className="container-xxl">
-        <div className="h-100">
-          <Title />
-          <Skills />
-          <Work />
-        </div>
-      </Container>
+      <div className="h-100">
+        <Title />
+        <Skills />
+        <Work />
+        <About />
+      </div>
     </div>
   );
 }

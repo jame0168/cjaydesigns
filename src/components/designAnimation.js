@@ -15,7 +15,6 @@ export function DesignAnimation() {
       scrollTrigger: {
         trigger: ".designAnimation",
         start: "top 130px",
-        markers: true,
         toggleActions: "play none none none"
       }
     });
@@ -73,7 +72,7 @@ export function DesignAnimation() {
   }, []);
 
   return (
-    <div className="designAnimation">
+    <div className="designAnimation animation-container">
       <svg
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"

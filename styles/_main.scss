@@ -39,6 +39,9 @@ section{
   //   height: 100vh;
   //   // max-height: 750px;
   // }
+  @media only screen and (max-width: 578px){
+    height: auto;
+  }
 }
 
 svg {

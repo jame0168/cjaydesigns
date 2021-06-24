@@ -8,11 +8,14 @@ export function WorkType(props) {
   if (props.work === "professional") {
     var content = works;
     var mainTitle = "My Work.";
+  } else if (props.work === "personal") {
+    var content = works;
+    var mainTitle = "My Projects.";
   }
 
   return (
-    <section className="h-auto">
-      <Container fluid="xl" className="container-xxl" id="work">
+    <section className="h-auto" id="work">
+      <Container fluid="xl" className="container-xxl">
         <Row className="pt-130">
           <Col>
             <h2 className="display-4 text-uppercase font-weight-bold text-center">

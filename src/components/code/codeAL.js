@@ -14,7 +14,6 @@ export function CodeAL() {
         trigger: ".codingAnimation",
         start: "top 130px",
         end: "+=1250",
-        markers: true,
         toggleActions: "play none none none"
       }
     });

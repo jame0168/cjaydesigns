@@ -15,7 +15,6 @@ export function Skills() {
         trigger: "#code",
         start: "top 130px",
         end: "+=1250",
-        markers: true,
         toggleActions: "play none none none"
       }
     });
@@ -45,7 +44,6 @@ export function Skills() {
         trigger: "#design",
         start: "top 130px",
         end: "+=1250",
-        markers: true,
         toggleActions: "play none none none"
       }
     });
@@ -75,7 +73,6 @@ export function Skills() {
         trigger: "#animate",
         start: "top 130px",
         end: "+=1250",
-        markers: true,
         toggleActions: "play none none none"
       }
     });
@@ -124,7 +121,10 @@ export function Skills() {
               id="skills"
             >
               <Row className="sticky d-flex align-items-center sections-content t-130">
-                <Col md={12} lg={{ span: 5, offset: 1 }}>
+                <Col md={12} lg={{ span: 6, order: 2 }}>
+                  {animation}
+                </Col>
+                <Col md={12} lg={{ span: 5, offset: 1, order: 1 }}>
                   <h2 className="fade--in display-4 text-uppercase font-weight-bold">
                     <span className="underline--magical">{title}</span>
                   </h2>
@@ -147,19 +147,20 @@ export function Skills() {
                           </li>
                         ))}
                       </Col>
-                      <Col xs={6} sm={4}>
-                        {tertiary.map((thirds, j) => (
-                          <li key={j}>
-                            <i className={tertiaryIcons}></i>
-                            <span> {thirds} </span>
-                          </li>
-                        ))}
+                      <Col xs={12} sm={4}>
+                        <Row>
+                          {tertiary.map((thirds, j) => (
+                            <Col xs={6} sm={12}>
+                              <li key={j}>
+                                <i className={tertiaryIcons}></i>
+                                <span> {thirds} </span>
+                              </li>
+                            </Col>
+                          ))}
+                        </Row>
                       </Col>
                     </Row>
                   </ul>
-                </Col>
-                <Col md={12} lg={6}>
-                  {animation}
                 </Col>
               </Row>
             </Container>

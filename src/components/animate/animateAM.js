@@ -11,7 +11,6 @@ export function AnimateAM() {
       scrollTrigger: {
         trigger: ".animateAnimation",
         start: "top 130px",
-        markers: true,
         toggleActions: "play none none none"
       }
     });
@@ -29,7 +28,6 @@ export function AnimateAM() {
       scrollTrigger: {
         trigger: ".animateAnimation",
         start: "top 130px",
-        markers: true,
         toggleActions: "play none none reset"
       }
     });

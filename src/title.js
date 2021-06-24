@@ -23,7 +23,6 @@ export function Title() {
     gsap.fromTo(
       "#fauxPhone",
       {
-        width: 140,
         x: "7%",
         y: "15%",
         rotate: 15
@@ -41,31 +40,13 @@ export function Title() {
   }, []);
 
   return (
-    <div className="Title">
+    <React.Fragment>
       <Jumbotron className="py-0 mb-0">
         <Container fluid="xl" className="container-xxl">
-          <Row>
+          <Row className="overflow-hidden">
             <Col
               md={12}
-              lg={6}
-              className="title-container d-flex align-items-center"
-            >
-              <div className="w-100">
-                <h1 className="display-3 text-uppercase font-weight-bold primary-font mb-0">
-                  <span className="title-first">Chris</span>
-                  <br />
-                  <span className="title-second">James</span>
-                </h1>
-                <h2 className="text-uppercase">
-                  <span className="title-caption">
-                    UX/UI and Graphic Design
-                  </span>
-                </h2>
-              </div>
-            </Col>
-            <Col
-              md={12}
-              lg={6}
+              lg={{ span: 6, order: 2 }}
               className="title-container d-flex align-items-center"
             >
               <div className="mx-auto lava-lamp position-relative">
@@ -95,9 +76,27 @@ export function Title() {
                 />
               </div>
             </Col>
+            <Col
+              md={12}
+              lg={{ span: 6, order: 1 }}
+              className="title-container d-flex align-items-center"
+            >
+              <div className="w-100">
+                <h1 className="display-3 text-uppercase font-weight-bold primary-font mb-0">
+                  <span className="title-first">Chris</span>
+                  <br />
+                  <span className="title-second">James</span>
+                </h1>
+                <h2 className="text-uppercase">
+                  <span className="title-caption">
+                    UX/UI and Graphic Design
+                  </span>
+                </h2>
+              </div>
+            </Col>
           </Row>
         </Container>
       </Jumbotron>
-    </div>
+    </React.Fragment>
   );
 }

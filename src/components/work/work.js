@@ -6,7 +6,7 @@ export function Work() {
   return (
     <React.Fragment>
       <WorkType work="professional" />
-      {/* <WorkType work="professional" /> */}
+      {/* <WorkType work="personal" /> */}
     </React.Fragment>
   );
 }
