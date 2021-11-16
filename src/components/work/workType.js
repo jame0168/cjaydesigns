@@ -14,7 +14,7 @@ export function WorkType(props) {
   }
 
   return (
-    <section className="h-auto" id="work">
+    <section className="h-auto mb-5" id="work">
       <Container fluid="xl" className="container-xxl">
         <Row className="pt-130">
           <Col>

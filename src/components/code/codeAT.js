@@ -18,7 +18,7 @@ export function CodeAT() {
     });
 
     animateIn.to(
-      ".fauxHeader",
+      ".faux--header",
       {
         duration: 1,
         marginTop: 0,
@@ -65,21 +65,21 @@ export function CodeAT() {
     );
   }, []);
 
-  useEffect(() => {
-    var animateScrub = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".codingAnimation",
-        start: "top -250px",
-        end: "+=1250",
-        scrub: true
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   var animateScrub = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".codingAnimation",
+  //       start: "top -250px",
+  //       end: "+=1250",
+  //       scrub: true
+  //     }
+  //   });
+  // }, []);
 
   return (
-    <div className="fauxHeader">
+    <div className="faux--header">
       <svg
-        className="fauxLogo"
+        className="faux--logo"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
@@ -125,7 +125,7 @@ export function CodeAT() {
           </g>
         </g>
       </svg>
-      <div className="fauxOptions d-inline-block position-absolute text-uppercase">
+      <div className="faux--options d-inline-block position-absolute text-uppercase">
         <span className="d-inline-block fO">
           <span className="d-inline-block px-2 py-1">Home</span>
           <span className="activeOption d-inline-block position-absolute"></span>
@@ -133,8 +133,8 @@ export function CodeAT() {
         <span className="d-inline-block px-2 py-1 fO">Drinks</span>
         <span className="d-inline-block px-2 py-1 fO">Gifts</span>
       </div>
-      <div className="fauxOptions fauxFunctions d-flex position-absolute text-uppercase">
-        <div className="fauxSearch d-flex align-items-center mr-2 px-2 fO">
+      <div className="faux--options faux--functions d-flex position-absolute text-uppercase">
+        <div className="faux--search d-flex align-items-center mr-2 px-2 fO">
           <i className="ri-search-line mr-1" style={{ fontSize: 10 }}></i>
           <span
             className="d-inline-block text-uppercase"
@@ -146,7 +146,7 @@ export function CodeAT() {
         <i className="ri-shopping-cart-line" id="fO-1"></i>
       </div>
       <div
-        className="fauxOptions fauxFunctions d-flex position-absolute"
+        className="faux--options faux--functions d-flex position-absolute"
         id="fO-2"
       >
         <i className="ri-menu-2-line"></i>

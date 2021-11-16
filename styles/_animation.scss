@@ -74,4 +74,7 @@
   right: -50%;
   display: block;
   z-index: 0;
+  @media all and (max-width: 576px) {
+    background-size: 150%;
+  }
  }

@@ -83,7 +83,7 @@ export function AnimateAM() {
   }, []);
 
   return (
-    <div className="fauxScreen faux--center position-relative bd-none mx-auto mt-3 w-75">
+    <div className="faux--screen faux--center position-relative bd-none mx-auto mt-1 mb-4 w-75">
       <img
         alt="ball"
         src="img/clay_ball.png"

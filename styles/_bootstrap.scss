@@ -55,8 +55,24 @@
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus{
-  color: #FFF !important;
+  color: $tertiary-color !important;
+  background-color: $primary-color;
+  border-color: $primary-color !important;
+  border-width: 2px !important;
+}
+
+.btn-primary{
+  color: $tertiary-color !important;
   background-color: #000;
-  border-color: #000 !important;
+  border-color: $tertiary-color!important;
+  border-width: 2px !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+  color: #000 !important;
+  background-color: $tertiary-color !important;
+  border-color: $tertiary-color !important;
   border-width: 2px !important;
 }

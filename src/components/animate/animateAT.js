@@ -24,6 +24,7 @@ export function AnimateAT() {
   }, []);
 
   return (
-    <div className="fauxScreen faux--top bd-none border-top-0 border-left-0 border-right-0 w-100" />
+    // <div className="faux--screen faux--top bd-none border-top-0 border-left-0 border-right-0 w-100" />
+    <div className="faux--top w-100" />
   );
 }

@@ -1,44 +1,43 @@
+.sections-content{
+  top: 50px;
+  @media only screen and (min-width: 768px){
+    top: 130px;
+  }
+
+}
+
 //Title Sytles
 .title-container{
   position: relative;
   height: auto;
   // max-height: 750px;
+  overflow: hidden;
   h1,h2 {
     text-align: center !important;
     @media only screen and (min-width: 992px){
       text-align: left !important;
     }
   }
+  h1{
+    font-size: 72px;
+    line-height: 2.5rem;
+    margin-bottom: 60px;
+    @media only screen and (min-width: 992px){
+      line-height: 6rem;
+      font-size: 110px;
+    }
+  }
+  h2{
+    font-size: 84px;
+    .text, .cursor{
+      background: $primary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
   @media only screen and (min-width: 992px){
     height: 100vh;
-  }
-}
-
-.title-first{
-  font-size: 100px;
-  line-height: 0;
-  @media only screen and (min-width: 992px){
-    font-size: 190px;
-  }
-}
-
-.title-second{
-  font-size: 92px;
-  line-height: 0;
-  @media only screen and (min-width: 992px){
-    font-size: 175px;
-    line-height: 100px;
-  }
-}
-
-.title-caption{
-  font-size: 20px; 
-  line-height: 0;
-  @media only screen and (min-width: 992px){
-    font-size: 32px;
-  }
-  @media only screen and (min-width: 1200px){
-    font-size: 40px;
+    overflow: visible;
   }
 }
 
@@ -70,20 +69,20 @@
 //Section Sytles
 .animation-container{
   @media only screen and (max-width: 992px){
-    height: 450px;
+    height: 425px;
     transform: scale(0.8);
     .fade--in{
-      transform: scale(1.25);
+      transform: scale(1.5);
     }
   }
 
   @media only screen and (max-width: 578px){
-    height: 400px;
-    transform: scale(0.68);
+    height: 350px;
+    transform: scale(0.6);
   }
 }
 
-.fauxScreen{
+.faux--screen{
   margin: 0 auto;
   border-radius: 10px;
   background: rgba( 255, 255, 255, 0.45 );
@@ -108,15 +107,15 @@
 //Coding Sytles
 .codingAnimation{
 
-  .fauxScreen{
+  .faux--screen{
     width: 500px;
     height: 280px;
 
-    .fauxSiteContent{
+    .faux--site-content{
       height: calc(100% - 100px);
     }
     
-    .fauxHeader{
+    .faux--header{
       position: relative;
       margin-top: -50px;
       padding-top: 15px;
@@ -124,7 +123,7 @@
       width: 100%;
       height: 50px;
 
-      .fauxLogo{
+      .faux--logo{
         width: 100px;
         height: 35px;
         position: absolute;
@@ -132,7 +131,7 @@
         left: 10px;
       }
 
-      .fauxOptions{
+      .faux--options{
         left: 115px;
         font-size: 9px;
         color: $secondary-color;
@@ -144,12 +143,12 @@
       }
     }
 
-    .fauxOptions.fauxFunctions{
+    .faux--options.faux--functions{
       left: unset;
       right: 15px;
       top: 15px;
   
-      .fauxSearch{
+      .faux--search{
         border: 2px solid $secondary-color;
         border-radius: 25px;
         border-radius: 25px;
@@ -172,14 +171,14 @@
       width: 95%;
     }
 
-    .fauxButton{
+    .faux--button{
       @extend p;
       background: $primary-gradient;
       color: $tertiary-color;
       border-radius: 50px;
     }
 
-    .fauxSelection{
+    .faux--selection{
       height: 125px;
       border-radius: 4px;
       background: -webkit-linear-gradient(120deg, rgba(255, 94, 98, 0.4) 0%, rgba(255, 153, 102, 0.4) 100%);
@@ -202,7 +201,7 @@
     }
   }
 
-  #fauxStats{ 
+  #faux--stats{ 
     ul{
       display: grid;
       grid-template-columns: 35% 65%;
@@ -221,7 +220,7 @@
 //Design Sytles
 .designAnimation{
 
-  .fauxScreen{
+  .faux--screen{
     width: 1280px;
     height: 800px;
     border-radius: 35px;
@@ -232,7 +231,7 @@
     box-shadow: 0 19px 38px rgba(64, 62, 61, 0.15), 0 15px 12px rgba(64, 62, 61, 0);
   }
 
-  .fauxScreen#draw{
+  .faux--screen#draw{
     background: rgba(255, 255, 255, 0.5);
     transform: scaleX(0.3) scaleY(0.3) scaleZ(0.3) rotateX(37deg) rotateY(30deg) rotateZ(-24deg) translate(-54%, -185%) skewX(16deg) skewY(0deg);
   }
@@ -247,7 +246,7 @@
 
 //Animation Styles
 .animateAnimation{
-  .fauxScreen{
+  .faux--screen{
     position: relative;
     background: rgba( 255, 255, 255, 0.35);
 
@@ -265,7 +264,7 @@
     }
   }
 
-  .fauxScreen.bd-none{
+  .faux--screen.bd-none{
     backdrop-filter: none;
   }
   
@@ -292,15 +291,15 @@
       }
 
       &--area{
-        .fauxScreen:first-child{
+        .faux--screen:first-child{
           height: 198px;
           box-shadow: none;
           backdrop-filter: none;
           background: none;
         }
 
-        .fauxScreen:nth-child(2){
-          height: 75px;
+        .faux--screen:nth-child(2){
+          height: 80px;
           border-radius: 0px;
           box-shadow: none;
           overflow: visible;
@@ -342,7 +341,7 @@
   display: inline-block;
 
   &-content{
-    // mix-blend-mode: multiply;
+    mix-blend-mode: multiply;
     opacity: 0.55;
     font-weight: 700;
     p{
@@ -367,7 +366,11 @@
 //About Styles
 #about{
   background: $primary-gradient;
-  h2{
-    color: $tertiary-color;
+  button{
+    mix-blend-mode: screen;
+    &::before{
+      mix-blend-mode: color-burn;
+    }
   }
 }
+

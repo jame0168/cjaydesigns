@@ -60,7 +60,7 @@ export function CodeAM() {
     });
 
     animateScrub.to(
-      ".fauxSelect:nth-child(2), .fauxSelect:nth-child(3)",
+      ".faux--select:nth-child(2), .faux--select:nth-child(3)",
       {
         duration: 1,
         flex: "0 0 0%",
@@ -73,7 +73,7 @@ export function CodeAM() {
     );
 
     animateScrub.to(
-      ".fauxSelect:nth-child(2), .fauxSelect:nth-child(3)",
+      ".faux--select:nth-child(2), .faux--select:nth-child(3)",
       {
         display: "none"
       },
@@ -81,7 +81,7 @@ export function CodeAM() {
     );
 
     animateScrub.to(
-      ".fauxSelect:first-child",
+      ".faux--select:first-child",
       {
         duration: 1,
         flex: "0 0 100%",
@@ -92,7 +92,7 @@ export function CodeAM() {
     );
 
     animateScrub.to(
-      ".fauxSelection",
+      ".faux--selection",
       {
         height: 195,
         ease: "linear"
@@ -100,7 +100,7 @@ export function CodeAM() {
       "-=1"
     );
 
-    animateScrub.from(".fauxSelection p, .fauxSelection ul", {
+    animateScrub.from(".faux--selection p, .faux--selection ul", {
       opacity: 0,
       duration: 0.5,
       ease: "linear"
@@ -112,9 +112,9 @@ export function CodeAM() {
       <div className="px-3">
         <h6 id="fauxTitle">New Arrivals</h6>
         <Row>
-          <Col xs={4} className="fauxSelect">
-            <div className="fauxSelection w-100 p-2">
-              <div id="fauxStats">
+          <Col xs={4} className="faux--select">
+            <div className="faux--selection w-100 p-2">
+              <div id="faux--stats">
                 <p className="font-weight-bold mb-1">About</p>
                 <p className="mb-2">
                   A very elegant, refined and detailed chardonnay that captures
@@ -138,11 +138,11 @@ export function CodeAM() {
               </div>
             </div>
           </Col>
-          <Col xs={4} className="fauxSelect">
-            <div className="fauxSelection w-100" />
+          <Col xs={4} className="faux--select">
+            <div className="faux--selection w-100" />
           </Col>
-          <Col xs={4} className="fauxSelect">
-            <div className="fauxSelection w-100" />
+          <Col xs={4} className="faux--select">
+            <div className="faux--selection w-100" />
           </Col>
         </Row>
       </div>

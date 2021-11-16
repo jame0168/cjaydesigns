@@ -25,7 +25,7 @@ export function AnimateAB() {
   }, []);
 
   return (
-    <div className="fauxScreen faux--bottom bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3">
+    <div className="faux--screen faux--bottom bd-none border-bottom-0 border-left-0 border-right-0 w-100 mt-3">
       <div className="faux--scrub position-absolute">
         <i className="ri-home-6-fill"></i>
         <div className="border h-75 mx-auto"></div>

@@ -78,9 +78,9 @@ export function CodeAnimation() {
           transform="translate(100 100)"
         />
       </svg>
-      <div className="fauxScreen position-absolute center" id="codeScreen">
+      <div className="faux--screen position-absolute center" id="codeScreen">
         <CodeAT />
-        <Row className="fauxSiteContent">
+        <Row className="faux--site-content">
           <CodeAL />
           <CodeAR />
           <CodeAM />

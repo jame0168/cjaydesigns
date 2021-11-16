@@ -1,3 +1,5 @@
+import { Col } from "react-bootstrap";
+
 import { CodeAnimation } from "../codeAnimation";
 import { DesignAnimation } from "../designAnimation";
 import { AnimateAnimation } from "../animateAnimation";
@@ -14,7 +16,8 @@ export const skills = [
     secondaryIcons: "ri-code-s-line",
     tertiary: ["Github", "BitBucket", "Cloud9"],
     tertiaryIcons: "ri-git-branch-line",
-    animation: <CodeAnimation />
+    animation: <CodeAnimation />,
+    order: 2
   },
   {
     section: "design",
@@ -27,7 +30,8 @@ export const skills = [
     secondaryIcons: "ri-device-line",
     tertiary: [],
     tertiaryIcons: "",
-    animation: <DesignAnimation />
+    animation: <DesignAnimation />,
+    order: 1
   },
   {
     section: "animate",
@@ -40,6 +44,7 @@ export const skills = [
     secondaryIcons: "ri-film-line",
     tertiary: [],
     tertiaryIcons: "",
-    animation: <AnimateAnimation />
+    animation: <AnimateAnimation />,
+    order: 2
   }
 ];

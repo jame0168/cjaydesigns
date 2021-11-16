@@ -110,7 +110,8 @@ export function Skills() {
             secondaryIcons,
             tertiary,
             tertiaryIcons,
-            animation
+            animation,
+            order
           },
           index
         ) => (
@@ -120,8 +121,8 @@ export function Skills() {
               className="container-xxl sections"
               id="skills"
             >
-              <Row className="sticky d-flex align-items-center sections-content t-130">
-                <Col md={12} lg={{ span: 6, order: 2 }}>
+              <Row className="sticky d-flex align-items-center sections-content overflow-hidden">
+                <Col md={12} lg={{ span: 6, order: order }}>
                   {animation}
                 </Col>
                 <Col md={12} lg={{ span: 5, offset: 1, order: 1 }}>
@@ -150,8 +151,8 @@ export function Skills() {
                       <Col xs={12} sm={4}>
                         <Row>
                           {tertiary.map((thirds, j) => (
-                            <Col xs={6} sm={12}>
-                              <li key={j}>
+                            <Col xs={6} sm={12} key={j}>
+                              <li>
                                 <i className={tertiaryIcons}></i>
                                 <span> {thirds} </span>
                               </li>

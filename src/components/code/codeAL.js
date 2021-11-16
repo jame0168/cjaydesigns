@@ -69,7 +69,7 @@ export function CodeAL() {
         <div className="fauxContent d-inline-block">
           <h1 className="font-weight-bold text-uppercase mb-0">Welcome</h1>
           <p>Your weekend starts here</p>
-          <div className="fauxButton d-inline-block px-2 py-1 text-center">
+          <div className="faux--button d-inline-block px-2 py-1 text-center">
             Browse Collection
           </div>
         </div>

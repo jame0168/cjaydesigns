@@ -33,15 +33,16 @@ i{
   display: inline-block;
 }
 
+i.secondary-color{
+  font-size: $size-sm;
+  background: $tertiary-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 section{
   height: 2500px;
-  // @media only screen and (max-width: 992px){
-  //   height: 100vh;
-  //   // max-height: 750px;
-  // }
-  @media only screen and (max-width: 578px){
-    height: auto;
-  }
 }
 
 svg {

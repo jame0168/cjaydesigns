@@ -15,9 +15,15 @@ $secondary-font-stack: 'Roboto', Arial, sans-serif;
 .primary-font{
   font-family: $primary-font-stack;
 }
+.primary-color{
+  color: $primary-color;
+}
 
 .secondary-font{
   font-family: $secondary-font-stack;
+}
+.secondary-color{
+  color: $tertiary-color;
 }
 
 //Sizes

@@ -50,7 +50,7 @@ export function AnimateAnimation() {
         />
       </svg>
       <div className="faux--screen-wrap position-absolute center overflow-hidden p-3">
-        <div className="fauxScreen w-100 h-100" id="faux--slide">
+        <div className="faux--screen w-100 h-100" id="faux--slide">
           <AnimateAT />
           <div className="faux--area w-100">
             <AnimateAM />

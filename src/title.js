@@ -4,6 +4,14 @@ import { gsap } from "gsap";
 
 import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 
+const words = [
+  "UI Designer.",
+  "UX Designer.",
+  "Coder.",
+  "Animator.",
+  "Graphic Designer."
+];
+
 export function Title() {
   useEffect(() => {
     gsap.fromTo(
@@ -39,11 +47,27 @@ export function Title() {
     );
   }, []);
 
+  useEffect(() => {
+    let cursor = gsap.to(".cursor", {
+      opacity: 0,
+      ease: "power2.InOut",
+      repeat: -1
+    });
+
+    let masterTL = gsap.timeline({ repeat: -1 });
+
+    words.forEach((word) => {
+      let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
+      tl.to(".text", { duration: 1, text: word });
+      masterTL.add(tl);
+    });
+  }, []);
+
   return (
     <React.Fragment>
       <Jumbotron className="py-0 mb-0">
         <Container fluid="xl" className="container-xxl">
-          <Row className="overflow-hidden">
+          <Row>
             <Col
               md={12}
               lg={{ span: 6, order: 2 }}
@@ -82,15 +106,12 @@ export function Title() {
               className="title-container d-flex align-items-center"
             >
               <div className="w-100">
-                <h1 className="display-3 text-uppercase font-weight-bold primary-font mb-0">
-                  <span className="title-first">Chris</span>
-                  <br />
-                  <span className="title-second">James</span>
+                <h1 className="text-uppercase text-nowrap font-weight-bold primary-font mb-0">
+                  Chris James
                 </h1>
-                <h2 className="text-uppercase">
-                  <span className="title-caption">
-                    UX/UI and Graphic Design
-                  </span>
+                <h2 className="font-weight-bold primary-font text-uppercase text-nowrap">
+                  <span class="text"></span>
+                  <span class="cursor">_</span>
                 </h2>
               </div>
             </Col>
