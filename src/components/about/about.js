@@ -2,6 +2,8 @@ import React from "react";
 
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
+import { AboutType } from "./aboutType";
+
 export function About() {
   return (
     <section className="h-auto" id="about">
@@ -34,7 +36,7 @@ export function About() {
                 </p>
                 <Button
                   variant="primary"
-                  className="mx-auto mt-4 mb-5 d-block text-uppercase font-weight-bold px-4"
+                  className="mx-auto my-4 d-block text-uppercase font-weight-bold px-4"
                 >
                   Download Resume
                 </Button>
@@ -42,36 +44,13 @@ export function About() {
             </Row>
             <Row>
               <Col>
-                <h5 class="text-center text-uppercase font-weight-bold secondary-color">
-                  <i class="ri-book-mark-line secondary-color"></i> Education
-                </h5>
-                <Row>
-                  <Col
-                    class="mx-2 w-100 py-3"
-                    style={{ borderTop: "2px solid #FFF" }}
-                  >
-                    <ul>
-                      <li>Words</li>
-                      <li>Words</li>
-                      <li>Words</li>
-                    </ul>
-                  </Col>
-                </Row>
-              </Col>
-              <Col>
-                <h5 class="text-center text-uppercase font-weight-bold secondary-color">
-                  <i class="ri-hammer-line secondary-color"></i> Work Experience
-                </h5>
-              </Col>
-              <Col>
-                <h5 class="text-center text-uppercase font-weight-bold secondary-color">
-                  <i class="ri-medal-line secondary-color"></i> Accolades
-                </h5>
+                <AboutType />
               </Col>
             </Row>
           </Col>
         </Row>
       </Container>
+      <Container className="transition" />
     </section>
   );
 }

@@ -19,16 +19,20 @@
     }
   }
   h1{
-    font-size: 72px;
+    font-size: 50px;
     line-height: 2.5rem;
     margin-bottom: 60px;
     @media only screen and (min-width: 992px){
-      line-height: 6rem;
-      font-size: 110px;
+      line-height: 10rem;
+      font-size: 180px;
     }
   }
   h2{
-    font-size: 84px;
+    font-size: 32px;
+    @media only screen and (min-width: 992px){
+      line-height: 10rem;
+      font-size: 84px;
+    }
     .text, .cursor{
       background: $primary-gradient;
       -webkit-background-clip: text;
@@ -334,18 +338,44 @@
 
 //Project Styles
 .project{
-  width: 33%;
-  min-width: 320px;
-  height: 450px;
-  border-radius: 10px;
-  display: inline-block;
+  display: block;
+  @media only screen and (max-width: 992px){
+    display: flex;
+  }
+
+  &-container{
+    width: 80%;
+    min-width: 320px;
+    height: 450px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 48px;
+    @media only screen and (max-width: 992px){
+      width: 33%;
+      margin: 16px 16px 16px 0px;
+    }
+    &:hover{
+      .fadeup{
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
 
   &-content{
     mix-blend-mode: multiply;
     opacity: 0.55;
     font-weight: 700;
+    margin-top: 24px;
+    @media only screen and (max-width: 992px){
+      margin-top: 48px;
+    }
     p{
-      font-size: 0.85em;
+      font-size: 1.25em;
+      @media only screen and (max-width: 992px){
+        font-size: 0.85em;
+        width: 75%;
+      }
     }
 
     .fadeup{
@@ -354,12 +384,32 @@
       transition: transform 1.35s cubic-bezier(0.19, 1, 0.22, 1), opacity 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+}
 
-  &:hover{
-    .fadeup{
-      transform: translateY(0px);
-      opacity: 1;
-    }
+#cloche{
+  width: 750px;
+  transform: translate(-5%, -40%);
+  @media only screen and (max-width: 992px){
+    width: 100%;
+    transform: scale(2) translate(-15%, -11%); 
+  }
+}
+
+#skidsteer{
+  width: 600px;
+  transform: translate(8%, -38%);
+  @media only screen and (max-width: 992px){
+    width: 100%;
+    transform: scale(1.65) translate(-25%, -15%); 
+  }
+}
+
+#tractor{
+  width: 550px;
+  transform: translate(10%, -35%);
+  @media only screen and (max-width: 992px){
+    width: 100%;
+    transform: scale(1.55) translate(-25%, -15%);
   }
 }
 
@@ -374,3 +424,12 @@
   }
 }
 
+.transition{
+  height: 250px;
+  max-width: none;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(0,0,0,0) 85%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(0,0,0,0) 85%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(0,0,0,0) 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+}

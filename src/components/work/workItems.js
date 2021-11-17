@@ -24,9 +24,9 @@ export const works = [
     img: (
       <img
         alt="Clay Cloche"
-        className="position-absolute center w-100"
+        className="position-absolute center"
         src="img/clay_hyre.png"
-        style={{ transform: "scale(2) translate(-15%, -11%)" }}
+        id="cloche"
       />
     ),
     link: ""
@@ -44,9 +44,9 @@ export const works = [
     img: (
       <img
         alt="Clay Skidsteer"
-        className="position-absolute center w-100"
+        className="position-absolute center"
         src="img/clay_nortrax.png"
-        style={{ transform: "scale(1.65) translate(-25%, -15%)" }}
+        id="skidsteer"
       />
     ),
     link: ""
@@ -64,9 +64,9 @@ export const works = [
     img: (
       <img
         alt="Clay Tractor"
-        className="position-absolute center w-100"
+        className="position-absolute center"
         src="img/clay_brandt.png"
-        style={{ transform: "scale(1.55) translate(-25%, -15%)" }}
+        id="tractor"
       />
     ),
     link: ""

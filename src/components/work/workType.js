@@ -24,7 +24,7 @@ export function WorkType(props) {
           </Col>
         </Row>
         <Row>
-          <Col className="d-flex flex-nowrap overflow-x-scroll">
+          <Col className="project flex-nowrap overflow-auto">
             {content.map(
               (
                 { title, description, background, categories, img, link },
@@ -32,14 +32,15 @@ export function WorkType(props) {
               ) => (
                 <div
                   key={index}
-                  className="project my-3 mr-3 px-3"
+                  className="project-container px-3"
                   style={background}
                 >
                   <Row className="h-100 overflow-hidden">
                     <Col xs={12} className="position-relative">
                       {img}
                       <Row>
-                        <Col xs={12} className="project-content mt-5">
+                        <Col xs={0} lg={6} />
+                        <Col xs={12} lg={6} className="project-content">
                           <h1 className="display-4 font-weight-bold text-uppercase mb-0">
                             {title}
                           </h1>
@@ -51,7 +52,7 @@ export function WorkType(props) {
                               {category}
                             </span>
                           ))}
-                          <p className="w-75 font-weight-bold">{description}</p>
+                          <p className="font-weight-bold">{description}</p>
                         </Col>
                         <Col
                           xs={12}
