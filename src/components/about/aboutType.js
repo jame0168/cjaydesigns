@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import { abouts } from "./aboutItems";
 
@@ -23,7 +23,7 @@ export function AboutType() {
               </h4>
               <ul className="mb-0 py-1 px-2">
                 {groups.map((group, j) => (
-                  <li class="mb-3">
+                  <li className="mb-3">
                     <span className="secondary-font font-weight-bold">
                       {group.place}
                     </span>

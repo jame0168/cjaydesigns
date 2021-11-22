@@ -2,6 +2,7 @@ import React from "react";
 
 import { NavBar } from "./nav";
 import { Main } from "./main";
+import { Footer } from "./footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/app.scss";
@@ -11,10 +12,7 @@ export default function App() {
     <div className="App">
       <NavBar />
       <Main />
-      {/* <Footer /> */}
-      {/* <Container fluid="xl">
-        <Footer />
-      </Container> */}
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,16 @@
 import React from "react";
 
-import { ParticleImg } from "./components/particleImage";
-
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
+import { ParticleImg } from "./components/particleImage";
+
 export function NavBar() {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollToPlugin);
+
   return (
     <div className="NavBar">
       <Navbar expand="lg" fixed="top">
@@ -14,16 +20,6 @@ export function NavBar() {
             className="overflow-hidden"
             style={{ fontSize: "30" }}
           >
-            {/* <a className="special" href="#toTop">
-              <i className="icon-logo-white"></i>
-            </a> */}
-            {/* <img
-              alt=""
-              src="/cjaydesigns-grey-logo.png"
-              width="60"
-              height="60"
-              className="d-inline-block align-top"
-            /> */}
             <ParticleImg />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -45,15 +41,6 @@ export function NavBar() {
                 <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav.Item>
             </Nav>
-            {/* 
-              // Secondary Nav
-              <Nav>
-                <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  Dank memes
-                </Nav.Link>
-              </Nav> 
-            */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

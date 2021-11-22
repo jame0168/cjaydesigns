@@ -9,7 +9,7 @@ export function About() {
     <section className="h-auto" id="about">
       <Container fluid="xl" className="container-xxl pt-5">
         <Row>
-          <Col xs={12} md={4}>
+          <Col xs={12} lg={4} xl={5} className="d-flex align-items-center">
             <div className="p-4 rounded-circle">
               <Image
                 className="w-100 text-center"
@@ -19,7 +19,7 @@ export function About() {
             </div>
             <div />
           </Col>
-          <Col xs={12} md={8}>
+          <Col xs={12} lg={8} xl={7}>
             <Row>
               <Col>
                 <h2 className="display-4 text-uppercase text-center font-weight-bold secondary-color">
@@ -50,7 +50,7 @@ export function About() {
           </Col>
         </Row>
       </Container>
-      <Container className="transition" />
+      {/* <Container className="transition" /> */}
     </section>
   );
 }

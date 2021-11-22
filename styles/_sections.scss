@@ -30,13 +30,24 @@
   h2{
     font-size: 32px;
     @media only screen and (min-width: 992px){
-      line-height: 10rem;
+      line-height: 5rem;
       font-size: 84px;
     }
     .text, .cursor{
       background: $primary-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+  }
+  h3{
+    font-size: 22px;
+    line-height: 1.5rem;
+    margin-bottom: 0px;
+    text-align: left;
+    padding-left: 8px;
+    @media only screen and (min-width: 992px){
+      line-height: 3rem;
+      font-size: 56px;
     }
   }
   @media only screen and (min-width: 992px){
@@ -379,9 +390,11 @@
     }
 
     .fadeup{
-      transform: translateY(50px);
-      opacity: 0;
-      transition: transform 1.35s cubic-bezier(0.19, 1, 0.22, 1), opacity 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      @media only screen and (min-width: 992px){
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform 1.35s cubic-bezier(0.19, 1, 0.22, 1), opacity 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      }
     }
   }
 }
@@ -391,7 +404,7 @@
   transform: translate(-5%, -40%);
   @media only screen and (max-width: 992px){
     width: 100%;
-    transform: scale(2) translate(-15%, -11%); 
+    transform: scale(1.8) translate(-15%, -15%); 
   }
 }
 
@@ -400,7 +413,7 @@
   transform: translate(8%, -38%);
   @media only screen and (max-width: 992px){
     width: 100%;
-    transform: scale(1.65) translate(-25%, -15%); 
+    transform: scale(1.5) translate(-25%, -19%); 
   }
 }
 
@@ -409,7 +422,7 @@
   transform: translate(10%, -35%);
   @media only screen and (max-width: 992px){
     width: 100%;
-    transform: scale(1.55) translate(-25%, -15%);
+    transform: scale(1.4) translate(-25%, -18%);
   }
 }
 
@@ -422,14 +435,19 @@
       mix-blend-mode: color-burn;
     }
   }
+  .rounded-circle{
+    max-width: 420px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .transition{
-  height: 250px;
+  height: 200px;
   max-width: none;
   background: rgb(255,255,255);
-  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(0,0,0,0) 85%);
-  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(0,0,0,0) 85%);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(0,0,0,0) 85%);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(0,0,0,0) 95%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(0,0,0,0) 95%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(0,0,0,0) 95%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
 }

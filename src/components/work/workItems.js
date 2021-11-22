@@ -6,6 +6,8 @@ export const works = [
     background: {
       background: "#FF5E62",
       background: "-webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%)"
+      // background: "#F5F5F5",
+      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: "",
@@ -19,6 +21,8 @@ export const works = [
       background: "rgb(0,167,164)",
       background:
         "radial-gradient(circle, rgba(0,167,164,1) 30%, rgba(0,127,122,1) 100%)"
+      // background: "#F5F5F5",
+      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: (
@@ -39,6 +43,8 @@ export const works = [
       background: "rgb(254,190,16)",
       background:
         "radial-gradient(circle, rgba(254,190,16,1) 30%, rgba(215,158,0,1) 100%)"
+      // background: "#F5F5F5",
+      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: (
@@ -59,6 +65,8 @@ export const works = [
       background: "rgb(254,70,0)",
       background:
         "radial-gradient(circle, rgba(254,70,0,1) 30%, rgba(198,50,15,1) 100%)"
+      // background: "#F5F5F5",
+      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
     },
     categories: ["Coding", "UX/UI Design"],
     img: (

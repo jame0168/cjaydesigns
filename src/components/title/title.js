@@ -106,6 +106,9 @@ export function Title() {
               className="title-container d-flex align-items-center"
             >
               <div className="w-100">
+                <h3 className="font-weight-bold primary-font text-uppercase">
+                  Hello, I'm
+                </h3>
                 <h1 className="text-uppercase font-weight-bold primary-font mb-0">
                   Chris James
                 </h1>

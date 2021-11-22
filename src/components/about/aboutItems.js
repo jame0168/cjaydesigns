@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export const abouts = [
   {
     title: "Education",
-    icon: <i class="ri-book-mark-line secondary-color align-text-top" />,
+    icon: <i className="ri-book-mark-line secondary-color align-text-top" />,
     groups: [
       {
         place: "Algonquin College",
@@ -25,7 +25,7 @@ export const abouts = [
   },
   {
     title: "Work Experience",
-    icon: <i class="ri-hammer-line secondary-color align-text-top" />,
+    icon: <i className="ri-hammer-line secondary-color align-text-top" />,
     groups: [
       {
         place: "Hyre",

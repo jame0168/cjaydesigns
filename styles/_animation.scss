@@ -67,6 +67,8 @@
 // Stars Animation
 .stars {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  background-size: 200%;
+  background-position: right;
   position: absolute;
   top: 0;
   bottom: 0;
