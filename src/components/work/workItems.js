@@ -4,10 +4,11 @@ export const works = [
     description:
       "This website was made from scratch as my own personal React and GSAP project. This website was created using Codesandbox, React, GSAP, Bootstrap and SASS.",
     background: {
-      background: "#FF5E62",
-      background: "-webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%)"
-      // background: "#F5F5F5",
-      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
+      background: "#F5F5F5",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(245,245,245,1) 100%)"
+      // background: "#FF5E62",
+      // background: "-webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: "",
@@ -18,11 +19,12 @@ export const works = [
     description:
       "Hyre is a web based two sided marketplace for hotels/event organizers to post shifts and eligibible hospitality staff to find shifts.",
     background: {
-      background: "rgb(0,167,164)",
+      background: "#F5F5F5",
       background:
-        "radial-gradient(circle, rgba(0,167,164,1) 30%, rgba(0,127,122,1) 100%)"
-      // background: "#F5F5F5",
-      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
+        "radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(245,245,245,1) 100%)"
+      // background: "rgb(0,167,164)",
+      // background:
+      // "radial-gradient(circle, rgba(0,167,164,1) 30%, rgba(0,127,122,1) 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: (
@@ -40,11 +42,12 @@ export const works = [
     description:
       "Nortrax is a heavy equipment supplier, focused mainly on the sale of John Deere construction and forestry equipment.",
     background: {
-      background: "rgb(254,190,16)",
+      background: "#F5F5F5",
       background:
-        "radial-gradient(circle, rgba(254,190,16,1) 30%, rgba(215,158,0,1) 100%)"
-      // background: "#F5F5F5",
-      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
+        "radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(245,245,245,1) 100%)"
+      // background: "rgb(254,190,16)",
+      // background:
+      // "radial-gradient(circle, rgba(254,190,16,1) 30%, rgba(215,158,0,1) 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
     img: (
@@ -62,11 +65,12 @@ export const works = [
     description:
       "Brandt is a heavy equipment and technology dealer, that delivers a full range of equipment and support services across Canada.",
     background: {
-      background: "rgb(254,70,0)",
+      background: "#F5F5F5",
       background:
-        "radial-gradient(circle, rgba(254,70,0,1) 30%, rgba(198,50,15,1) 100%)"
-      // background: "#F5F5F5",
-      // background: "-webkit-linear-gradient(120deg, #E1E1E1, #FFFFFF 100%)"
+        "radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(245,245,245,1) 100%)"
+      // background: "rgb(254,70,0)",
+      // background:
+      // "radial-gradient(circle, rgba(254,70,0,1) 30%, rgba(198,50,15,1) 100%)"
     },
     categories: ["Coding", "UX/UI Design"],
     img: (

@@ -15,6 +15,21 @@ const words = [
 export function Title() {
   useEffect(() => {
     gsap.fromTo(
+      ".fauxStation",
+      { scale: 0.15, x: "-85%", y: "-20%", rotate: "-20deg" },
+      {
+        scale: 0.15,
+        x: "-20%",
+        y: "-85%",
+        rotate: "20deg",
+        duration: 15,
+        yoyo: false,
+        repeat: -1,
+        ease: "power1.inOut"
+      }
+    );
+
+    gsap.fromTo(
       ".fauxAstronaut",
       { scale: 1.25, x: "-30%", y: "-20%" },
       {
@@ -65,7 +80,7 @@ export function Title() {
 
   return (
     <React.Fragment>
-      <Jumbotron className="py-0 mb-0">
+      <Jumbotron className="py-0">
         <Container fluid="xl" className="container-xxl">
           <Row>
             <Col
@@ -77,6 +92,11 @@ export function Title() {
                 <div className="lava clip-svg w-100 h-100">
                   <div className="stars"></div>
                   <img
+                    alt="NASA Space Station"
+                    src="img/clay-space-station.png"
+                    className="position-absolute center-no-translate fauxStation"
+                  />
+                  <img
                     alt="Ark Academy Astronaut"
                     src="img/clay_astronaut.png"
                     className="position-absolute center-no-translate w-100 fauxAstronaut"
@@ -85,7 +105,7 @@ export function Title() {
                 <img
                   alt="Ark Academy Astronaut"
                   src="img/clay_astronaut_overlay.png"
-                  className="position-absolute  center-no-translate w-100 fauxAstronaut"
+                  className="position-absolute center-no-translate w-100 fauxAstronaut"
                 />
                 <svg width="0" height="0">
                   <clipPath id="svgClip" clipPathUnits="objectBoundingBox">

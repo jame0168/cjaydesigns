@@ -7,7 +7,7 @@ import { AboutType } from "./aboutType";
 export function About() {
   return (
     <section className="h-auto" id="about">
-      <Container fluid="xl" className="container-xxl pt-5">
+      <Container fluid="xl" className="container-xxl pt-5 pb-4">
         <Row>
           <Col xs={12} lg={4} xl={5} className="d-flex align-items-center">
             <div className="p-4 rounded-circle">

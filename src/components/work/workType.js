@@ -40,19 +40,21 @@ export function WorkType(props) {
                       {img}
                       <Row>
                         <Col xs={0} lg={6} />
-                        <Col xs={12} lg={6} className="project-content">
+                        <Col xs={12} lg={6}>
                           <h1 className="display-4 font-weight-bold text-uppercase mb-0">
                             {title}
                           </h1>
-                          {categories.map((category, j) => (
-                            <span
-                              key={j}
-                              className="badge badge-pill badge-primary border text-uppercase mb-1 mr-1"
-                            >
-                              {category}
-                            </span>
-                          ))}
-                          <p className="font-weight-bold">{description}</p>
+                          <div className="project-content">
+                            {categories.map((category, j) => (
+                              <span
+                                key={j}
+                                className="badge badge-pill badge-primary border text-uppercase mb-1 mr-1"
+                              >
+                                {category}
+                              </span>
+                            ))}
+                            <p className="font-weight-bold">{description}</p>
+                          </div>
                         </Col>
                         <Col
                           xs={12}
