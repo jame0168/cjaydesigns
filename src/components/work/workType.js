@@ -1,21 +1,22 @@
 import React from "react";
-
 import { Container, Row, Col } from "react-bootstrap";
 
 import { works } from "./workItems";
+import { projects } from "./projectItems";
+import { WorkCard } from "./workCard";
 
 export function WorkType(props) {
   if (props.work === "professional") {
     var content = works;
     var mainTitle = "My Work.";
   } else if (props.work === "personal") {
-    var content = works;
+    var content = projects;
     var mainTitle = "My Projects.";
   }
 
   return (
     <section className="h-auto mb-5" id="work">
-      <Container fluid="xl" className="container-xxl">
+      <Container fluid="xl" className="container-xxl tile">
         <Row className="pt-130">
           <Col>
             <h2 className="display-4 text-uppercase font-weight-bold text-center">
@@ -23,59 +24,7 @@ export function WorkType(props) {
             </h2>
           </Col>
         </Row>
-        <Row>
-          <Col className="project flex-nowrap overflow-auto">
-            {content.map(
-              (
-                { title, description, background, categories, img, link },
-                index
-              ) => (
-                <div
-                  key={index}
-                  className="project-container px-3"
-                  style={background}
-                >
-                  <Row className="h-100 overflow-hidden">
-                    <Col xs={12} className="position-relative">
-                      {img}
-                      <Row>
-                        <Col xs={0} lg={6} />
-                        <Col xs={12} lg={6}>
-                          <h1 className="display-4 font-weight-bold text-uppercase mb-0">
-                            {title}
-                          </h1>
-                          <div className="project-content">
-                            {categories.map((category, j) => (
-                              <span
-                                key={j}
-                                className="badge badge-pill badge-primary border text-uppercase mb-1 mr-1"
-                              >
-                                {category}
-                              </span>
-                            ))}
-                            <p className="font-weight-bold">{description}</p>
-                          </div>
-                        </Col>
-                        <Col
-                          xs={12}
-                          className="project-content position-absolute d-flex justify-content-center b-15"
-                        >
-                          <a
-                            type="button"
-                            className="btn btn-default text-uppercase font-weight-bold border fadeup"
-                            href={link}
-                          >
-                            View Project
-                          </a>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </div>
-              )
-            )}
-          </Col>
-        </Row>
+        <WorkCard content={content} />
       </Container>
     </section>
   );

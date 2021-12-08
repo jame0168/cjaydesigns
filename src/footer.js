@@ -18,14 +18,7 @@ export function Footer() {
             <p className="mb-0">
               You can reach out to me through email at{" "}
               <a
-                className="secondary-font font-weight-bold"
-                style={{
-                  color: "salmon",
-                  background:
-                    "-webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%)",
-                  webkitBackgroundClip: "text",
-                  webkitTextFillColor: "transparent"
-                }}
+                className="secondary-font font-weight-bold gradient-text"
                 href="mailto:chrisjames20@gmail.com"
               >
                 chrisjames20@gmail.com

@@ -11,7 +11,14 @@ export const works = [
       // background: "-webkit-linear-gradient(120deg, #ff5e62 0%, #ff9966 100%)"
     },
     categories: ["Coding", "UX/UI Design", "Graphic Design"],
-    img: "",
+    img: (
+      <img
+        alt="Clay Crown"
+        className="position-absolute center"
+        src="img/clay_crown.png"
+        id="crown"
+      />
+    ),
     link: ""
   },
   {
@@ -31,7 +38,7 @@ export const works = [
       <img
         alt="Clay Cloche"
         className="position-absolute center"
-        src="img/clay_hyre.png"
+        src="img/clay_cloche.png"
         id="cloche"
       />
     ),
@@ -54,7 +61,7 @@ export const works = [
       <img
         alt="Clay Skidsteer"
         className="position-absolute center"
-        src="img/clay_nortrax.png"
+        src="img/clay_skidsteer.png"
         id="skidsteer"
       />
     ),
@@ -77,7 +84,7 @@ export const works = [
       <img
         alt="Clay Tractor"
         className="position-absolute center"
-        src="img/clay_brandt.png"
+        src="img/clay_tractor.png"
         id="tractor"
       />
     ),

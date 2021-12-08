@@ -21,8 +21,8 @@ export function Title() {
         scale: 0.15,
         x: "-20%",
         y: "-85%",
-        rotate: "20deg",
-        duration: 15,
+        rotate: "60deg",
+        duration: 20,
         yoyo: false,
         repeat: -1,
         ease: "power1.inOut"
@@ -86,15 +86,15 @@ export function Title() {
             <Col
               md={12}
               lg={{ span: 6, order: 2 }}
-              className="title-container d-flex align-items-center"
+              className="title-container d-flex align-items-center position-relative overflow-hidden"
             >
               <div className="mx-auto lava-lamp position-relative">
                 <div className="lava clip-svg w-100 h-100">
                   <div className="stars"></div>
                   <img
                     alt="NASA Space Station"
-                    src="img/clay-space-station.png"
-                    className="position-absolute center-no-translate fauxStation"
+                    src="img/clay_station.png"
+                    className="position-absolute center-no-translate w-100 fauxStation"
                   />
                   <img
                     alt="Ark Academy Astronaut"
@@ -133,8 +133,8 @@ export function Title() {
                   Chris James
                 </h1>
                 <h2 className="font-weight-bold primary-font text-uppercase text-nowrap">
-                  <span class="text"></span>
-                  <span class="cursor">_</span>
+                  <span className="text gradient-text"></span>
+                  <span className="cursor gradient-text">_</span>
                 </h2>
               </div>
             </Col>

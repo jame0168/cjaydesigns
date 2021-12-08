@@ -10,7 +10,11 @@ export function AboutType() {
       <div className="about-container">
         <Row>
           {abouts.map(({ title, icon, groups }, index) => (
-            <Col md={6} className="w-100 py-3 about-content secondary-color">
+            <Col
+              md={6}
+              className="w-100 py-3 about-content secondary-color"
+              key={index}
+            >
               <h4 className="text-left text-uppercase font-weight-bold align-bottom secondary-color p-2">
                 <span
                   style={{
@@ -23,7 +27,7 @@ export function AboutType() {
               </h4>
               <ul className="mb-0 py-1 px-2">
                 {groups.map((group, j) => (
-                  <li className="mb-3">
+                  <li className="mb-3" key={j}>
                     <span className="secondary-font font-weight-bold">
                       {group.place}
                     </span>

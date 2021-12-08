@@ -5,12 +5,26 @@
   }
 }
 
+.gradient-text{
+  background: $primary-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+//Loading Screen
+.loader-container{
+  height: 100vh;
+
+  .gif-wrap{
+    max-width: 200px;
+    @media only screen and (max-width: 992px){
+      width: 150px;
+    }
+  }
+}
+
 //Title Sytles
 .title-container{
-  position: relative;
-  height: auto;
-  // max-height: 750px;
-  overflow: hidden;
   h1,h2 {
     text-align: center !important;
     @media only screen and (min-width: 992px){
@@ -32,11 +46,6 @@
       line-height: 5rem;
       font-size: 84px;
     }
-    .text, .cursor{
-      background: $primary-gradient;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
   h3{
     font-size: 22px;
@@ -51,10 +60,14 @@
       font-size: 56px;
       width: 100%;
     }
+    @media only screen and (max-width: 364px){
+      text-align: center;
+      padding-left: 0px;
+    }
   }
   @media only screen and (min-width: 992px){
-    height: 100vh;
-    overflow: visible;
+    height: 100vh !important;
+    overflow: visible !important;
   }
 }
 
@@ -377,12 +390,6 @@
     }
   }
 
-  h1{
-    background: $primary-gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   &-content{
     mix-blend-mode: multiply;
     opacity: 0.55;
@@ -406,31 +413,54 @@
   }
 }
 
-#cloche{
-  width: 750px;
-  transform: translate(-5%, -40%);
+#crown{
+  width: 800px;
+  transform: translate(-14.5%, -33%);
   @media only screen and (max-width: 992px){
     width: 100%;
-    transform: scale(1.8) translate(-15%, -15%); 
+    transform: scale(1.9) translate(-29%, -10%); 
+  }
+}
+
+#cloche{
+  width: 800px;
+  transform: translate(-10%, -33%);
+  @media only screen and (max-width: 992px){
+    width: 100%;
+    transform: scale(1.9) translate(-24%, -8%); 
   }
 }
 
 #skidsteer{
-  width: 600px;
-  transform: translate(8%, -38%);
+  width: 800px;
+  transform: translate(-12.5%, -35%);
   @media only screen and (max-width: 992px){
     width: 100%;
-    transform: scale(1.5) translate(-25%, -19%); 
+    transform: scale(1.9) translate(-27%, -10%); 
   }
 }
 
 #tractor{
-  width: 550px;
-  transform: translate(10%, -35%);
+  width: 750px;
+  transform: translate(-12.5%, -37%);
   @media only screen and (max-width: 992px){
     width: 100%;
-    transform: scale(1.4) translate(-25%, -18%);
+    transform: scale(1.8) translate(-32%, -12%);
   }
+}
+
+.page-container {
+  visibility: hidden;
+}
+
+.page {
+  cursor: pointer;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 //About Styles

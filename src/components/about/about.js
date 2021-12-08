@@ -25,7 +25,7 @@ export function About() {
                 <h2 className="display-4 text-uppercase text-center font-weight-bold secondary-color">
                   <span>Hi, I'm Chris James.</span>
                 </h2>
-                <p className="text-center secondary-color px-5 mb-0">
+                <p className="text-center secondary-color mb-0">
                   I am a designer and coder with over five year’s professional
                   experience, in addition to seven years of education in the
                   field of Marketing and Graphic Design. I love to create and I
